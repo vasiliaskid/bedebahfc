@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "date": "2026-06-05",
+    "day": "05",
+    "month": "Jun",
+    "competition": "Internal",
+    "opponent": "INTERNAL",
+    "venue": "Lapangan Nglorog",
+    "time": "15.30",
+    "type": "trofeo"
+  },
+  {
+    "id": 2,
+    "date": "2026-06-12",
+    "day": "12",
+    "month": "Jun",
+    "competition": "Sparring",
+    "opponent": "KIDTRO",
+    "venue": "Morley Minisoccer",
+    "time": "18.30",
+    "type": "berikutnya"
+  },
+  {
+    "id": 3,
+    "date": "2026-06-18",
+    "day": "18",
+    "month": "Jun",
+    "competition": "Sparring",
+    "opponent": "SILUMAN FC",
+    "venue": "Lapangan Polres Sragen",
+    "time": "16.00",
+    "type": "berikutnya"
+  },
+  {
+    "id": 4,
+    "date": "2026-06-26",
+    "day": "26",
+    "month": "Jun",
+    "competition": "Sparring",
+    "opponent": "PN Boyolali",
+    "venue": "Morley Minisoccer",
+    "time": "18.30",
+    "type": "berikutnya"
+  }
+]

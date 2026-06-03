@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BEDEBAH FC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Barlow:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-brand">
+    <div class="nav-mono"><span>BFC</span></div>
+    <span class="nav-name">BEDEBAH</span>
+  </div>
+  <div class="nav-tabs">
+    <button class="nav-tab active" onclick="showPage('home',this)">Home</button>
+    <button class="nav-tab"        onclick="showPage('squad',this)">Squad</button>
+    <button class="nav-tab"        onclick="showPage('absensi',this)">Absensi</button>
+  </div>
+</nav>
+
+<!-- ============================================================
+     HOME
+============================================================ -->
+<div id="home" class="page active">
+  <div class="home-hero">
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-eye">Bermain Dengan Bahagia</div>
+        <div class="hero-h1">BEDE<br>BAH</div>
+        <div class="hero-fc">FC</div>
+        <div class="hero-sub">Sragen · Est. Kapan Lupa · Kalah Pun Happy</div>
+      </div>
+      <div class="hero-deco">
+        <div class="hero-deco-num">1</div>
+      </div>
+    </div>
+    <div class="stat-bar">
+      <div class="stat-cell"><div class="stat-n" id="stat-pemain">0</div><div class="stat-l">Pemain</div></div>
+      <div class="stat-cell"><div class="stat-n" id="stat-fixtures">0</div><div class="stat-l">Fixtures</div></div>
+      <div class="stat-cell"><div class="stat-n" id="stat-hadir">0</div><div class="stat-l">Konfirmasi</div></div>
+      <div class="stat-cell"><div class="stat-n">0</div><div class="stat-l">Trofi</div></div>
+    </div>
+  </div>
+
+  <div class="sec pb">
+    <div class="sec-head">
+      <div class="sec-title">Fixtures</div>
+      <div class="sec-line"></div>
+      <div class="sec-num" id="fixtures-count">0 Matches</div>
+    </div>
+    <div id="match-list"></div>
+  </div>
+</div>
+
+<!-- ============================================================
+     SQUAD
+============================================================ -->
+<div id="squad" class="page">
+  <div class="squad-wrap pb">
+    <div class="sec-head">
+      <div class="sec-title">Skuad</div>
+      <div class="sec-line"></div>
+      <div class="sec-num" id="squad-count">0 Players</div>
+    </div>
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterSquad('all',this)">Semua</button>
+      <button class="filter-btn" onclick="filterSquad('gk',this)">Kiper</button>
+      <button class="filter-btn" onclick="filterSquad('player',this)">Player</button>
+    </div>
+    <div class="squad-grid" id="squad-grid"></div>
+  </div>
+</div>
+
+<!-- ============================================================
+     ABSENSI
+============================================================ -->
+<div id="absensi" class="page">
+  <div class="abs-wrap pb">
+    <div class="abs-card">
+      <div class="abs-header">
+        <div class="abs-title">KONFIRMASI HADIR</div>
+        <div class="abs-sub">BEDEBAH FC · ABSENSI MATCH</div>
+      </div>
+      <div class="abs-body">
+        <div class="f-group">
+          <label class="f-label">Pertandingan</label>
+          <select class="f-select" id="sel-match">
+            <option value="">— Pilih pertandingan —</option>
+          </select>
+        </div>
+        <div class="f-group">
+          <label class="f-label">Nama Pemain</label>
+          <select class="f-select" id="sel-nama">
+            <option value="">— Pilih nama —</option>
+          </select>
+        </div>
+        <button class="submit-btn" onclick="handleAbsen()">KONFIRMASI HADIR</button>
+        <div class="toast" id="toast">
+          <div class="toast-t" id="toast-t"></div>
+          <div class="toast-s" id="toast-s"></div>
+        </div>
+        <div class="hadir-section">
+          <div class="hadir-head">
+            <div class="hadir-title">Yang Sudah Konfirmasi</div>
+            <div class="hadir-line"></div>
+            <div class="hadir-count" id="hadir-count">0 pemain</div>
+          </div>
+          <div id="hadir-list"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     FIFA CARD MODAL
+============================================================ -->
+<div class="modal-overlay" id="modal" onclick="closeModalOverlay(event)">
+  <div class="fifa-card">
+    <button class="fc-close" onclick="closeModal()">✕</button>
+    <div class="fifa-card-inner">
+      <div class="fc-top">
+        <div class="fc-left-col">
+          <div class="fc-rating" id="fc-rating">88</div>
+          <div class="fc-pos"    id="fc-pos">GK</div>
+          <div class="fc-flag">🇮🇩</div>
+          <div class="fc-logo">BEDEBAH FC</div>
+        </div>
+        <div class="fc-silhouette" id="fc-avatar">⚽</div>
+      </div>
+      <div class="fc-img-area" style="display:none"></div>
+      <div class="fc-name-bar">
+        <div class="fc-name" id="fc-name">NAMA</div>
+      </div>
+      <div class="fc-stats" id="fc-stats"></div>
+      <div class="fc-quote" id="fc-quote"></div>
+    </div>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>

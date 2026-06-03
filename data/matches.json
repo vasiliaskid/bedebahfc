@@ -8,7 +8,8 @@
     "opponent": "INTERNAL",
     "venue": "Lapangan Nglorog",
     "time": "15.30",
-    "type": "trofeo"
+    "type": "trofeo",
+    "htm": "± "
   },
   {
     "id": 2,
@@ -19,7 +20,8 @@
     "opponent": "KIDTRO",
     "venue": "Morley Minisoccer",
     "time": "18.30",
-    "type": "berikutnya"
+    "type": "berikutnya",
+    "htm": "± "
   },
   {
     "id": 3,
@@ -30,7 +32,8 @@
     "opponent": "SILUMAN FC",
     "venue": "Lapangan Polres Sragen",
     "time": "16.00",
-    "type": "berikutnya"
+    "type": "berikutnya",
+    "htm": "± "
   },
   {
     "id": 4,
@@ -41,6 +44,7 @@
     "opponent": "PN Boyolali",
     "venue": "Morley Minisoccer",
     "time": "18.30",
-    "type": "berikutnya"
+    "type": "berikutnya",
+    "htm": "± "
   }
 ]

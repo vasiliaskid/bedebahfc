@@ -209,6 +209,10 @@ body {
   font-family: 'Barlow', sans-serif;
   font-size: 10px; color: var(--tm); margin-top: 3px;
 }
+.m-htm {
+  font-family: 'Barlow', sans-serif;
+  font-size: 10px; color: var(--gold); margin-top: 2px; font-weight: 500;
+}
 .m-right {
   display: flex; flex-direction: column;
   align-items: flex-end; justify-content: center;

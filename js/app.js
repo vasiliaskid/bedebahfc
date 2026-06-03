@@ -80,6 +80,7 @@ function renderMatches() {
           <div class="m-comp">${m.competition}</div>
           <div class="m-teams">BEDEBAH FC <span class="vs">${vs}</span> ${m.opponent}</div>
           <div class="m-meta">${m.venue}</div>
+          ${m.htm ? `<div class="m-htm">HTM: ${m.htm}</div>` : ''}
         </div>
         <div class="m-right">
           <div class="m-time">${m.time}</div>

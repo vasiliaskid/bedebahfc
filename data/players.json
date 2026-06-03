@@ -5,10 +5,22 @@
     "gk": true,
     "overall": 87,
     "skills": [
-      { "label": "Refleks Kaget",        "value": 88 },
-      { "label": "Ngeles Kebobolan",      "value": 99 },
-      { "label": "Tepuk Tangan Sendiri",  "value": 94 },
-      { "label": "Loncat Terlambat",      "value": 82 }
+      {
+        "label": "Refleks",
+        "value": 88
+      },
+      {
+        "label": "Antisipasi",
+        "value": 99
+      },
+      {
+        "label": "Komando Belakang",
+        "value": 94
+      },
+      {
+        "label": "Timing Keluar",
+        "value": 82
+      }
     ],
     "quote": "Bola itu bukan urusan gue, urusan tiang."
   },
@@ -18,10 +30,22 @@
     "gk": true,
     "overall": 82,
     "skills": [
-      { "label": "Tangkap Nyamper",          "value": 83 },
-      { "label": "Teriak ke Bek",             "value": 97 },
-      { "label": "Tendang Gawang Salah Arah", "value": 43 },
-      { "label": "Pura-pura Cedera",          "value": 88 }
+      {
+        "label": "Shot Stopping",
+        "value": 83
+      },
+      {
+        "label": "Komunikasi",
+        "value": 97
+      },
+      {
+        "label": "Distribusi Bola",
+        "value": 43
+      },
+      {
+        "label": "Mental Bertanding",
+        "value": 88
+      }
     ],
     "quote": "Satu kebobolan, seribu alasan."
   },
@@ -31,10 +55,22 @@
     "gk": false,
     "overall": 85,
     "skills": [
-      { "label": "Umpan ke Lawan",   "value": 91 },
-      { "label": "Foto Paling Pose", "value": 98 },
-      { "label": "Protes Wasit",     "value": 86 },
-      { "label": "Stamina 2x45",     "value": 14 }
+      {
+        "label": "Umpan Jauh",
+        "value": 91
+      },
+      {
+        "label": "Percaya Diri",
+        "value": 98
+      },
+      {
+        "label": "Daya Juang",
+        "value": 86
+      },
+      {
+        "label": "Stamina",
+        "value": 14
+      }
     ],
     "quote": "Taktiknya ada, eksekusinya tidak."
   },
@@ -44,10 +80,22 @@
     "gk": false,
     "overall": 83,
     "skills": [
-      { "label": "Tekel Filosofis",    "value": 88 },
-      { "label": "Diam di Tempat",     "value": 94 },
-      { "label": "Heading ke Tribun",  "value": 79 },
-      { "label": "Ngobrol Saat Main",  "value": 96 }
+      {
+        "label": "Tekel",
+        "value": 88
+      },
+      {
+        "label": "Jaga Posisi",
+        "value": 94
+      },
+      {
+        "label": "Duel Udara",
+        "value": 79
+      },
+      {
+        "label": "Komunikasi Tim",
+        "value": 96
+      }
     ],
     "quote": "Saya di sini untuk memberi contoh. Contoh yang salah."
   },
@@ -57,10 +105,22 @@
     "gk": false,
     "overall": 80,
     "skills": [
-      { "label": "Dribel Berputar Sendiri", "value": 84 },
-      { "label": "Crossing ke Parkiran",   "value": 87 },
-      { "label": "Sprint ke Warteg",        "value": 96 },
-      { "label": "Kembali Lambat",          "value": 91 }
+      {
+        "label": "Dribel",
+        "value": 84
+      },
+      {
+        "label": "Crossing",
+        "value": 87
+      },
+      {
+        "label": "Akselerasi",
+        "value": 96
+      },
+      {
+        "label": "Recovery Run",
+        "value": 91
+      }
     ],
     "quote": "Kecepatan adalah milik semua orang. Kecuali saya."
   },
@@ -70,10 +130,22 @@
     "gk": false,
     "overall": 88,
     "skills": [
-      { "label": "Tendangan Meleset",    "value": 93 },
-      { "label": "Kontrol Pakai Dada",   "value": 89 },
-      { "label": "Offside Spesialis",    "value": 95 },
-      { "label": "Gol Salah Gawang",     "value": 81 }
+      {
+        "label": "Finishing",
+        "value": 93
+      },
+      {
+        "label": "Kontrol Bola",
+        "value": 89
+      },
+      {
+        "label": "Pergerakan Tanpa Bola",
+        "value": 95
+      },
+      {
+        "label": "Insting Menyerang",
+        "value": 81
+      }
     ],
     "quote": "Teknik? Sudah. Gol? Nanti dulu."
   },
@@ -83,10 +155,22 @@
     "gk": false,
     "overall": 81,
     "skills": [
-      { "label": "Kontrol Pakai Lutut",   "value": 82 },
-      { "label": "Umpan ke Angin",        "value": 88 },
-      { "label": "Jalan Cepat Menguasai", "value": 86 },
-      { "label": "Ngilang Saat Dibutuhkan","value": 94 }
+      {
+        "label": "Kontrol Pertama",
+        "value": 82
+      },
+      {
+        "label": "Umpan Terobosan",
+        "value": 88
+      },
+      {
+        "label": "Mobilitas",
+        "value": 86
+      },
+      {
+        "label": "Cari Ruang",
+        "value": 94
+      }
     ],
     "quote": "Lebar lapangan adalah teman saya."
   },
@@ -96,10 +180,22 @@
     "gk": false,
     "overall": 84,
     "skills": [
-      { "label": "Foto Paling Kece",       "value": 99 },
-      { "label": "Umpan Mundur Konsisten", "value": 93 },
-      { "label": "Dribel ke Arah Angin",   "value": 77 },
-      { "label": "Taktik Ngawur",          "value": 85 }
+      {
+        "label": "Percaya Diri",
+        "value": 99
+      },
+      {
+        "label": "Sirkulasi Bola",
+        "value": 93
+      },
+      {
+        "label": "Dribel",
+        "value": 77
+      },
+      {
+        "label": "Kreativitas",
+        "value": 85
+      }
     ],
     "quote": "Permainan indah dimulai dari tampilan indah."
   },
@@ -109,10 +205,22 @@
     "gk": false,
     "overall": 80,
     "skills": [
-      { "label": "Tekel Nyaris Kartu",   "value": 91 },
-      { "label": "Posisi Selalu Salah",  "value": 87 },
-      { "label": "Protes Offsid",        "value": 96 },
-      { "label": "Heading Ke Mana-mana", "value": 78 }
+      {
+        "label": "Tekel",
+        "value": 91
+      },
+      {
+        "label": "Penempatan Posisi",
+        "value": 87
+      },
+      {
+        "label": "Mental Bertanding",
+        "value": 96
+      },
+      {
+        "label": "Heading",
+        "value": 78
+      }
     ],
     "quote": "Kartu kuning itu harga seni."
   },
@@ -122,10 +230,22 @@
     "gk": false,
     "overall": 82,
     "skills": [
-      { "label": "Ngeluyur ke Depan",   "value": 95 },
-      { "label": "Lupa Balik",          "value": 89 },
-      { "label": "Overlap Tanpa Umpan", "value": 84 },
-      { "label": "Sprint Sekali Habis", "value": 88 }
+      {
+        "label": "Overlap",
+        "value": 95
+      },
+      {
+        "label": "Transisi Bertahan",
+        "value": 89
+      },
+      {
+        "label": "Dukungan Serangan",
+        "value": 84
+      },
+      {
+        "label": "Akselerasi",
+        "value": 88
+      }
     ],
     "quote": "Saya defender tapi hati saya striker."
   },
@@ -135,10 +255,22 @@
     "gk": false,
     "overall": 81,
     "skills": [
-      { "label": "Ngeles Salah Posisi", "value": 97 },
-      { "label": "Crossing Melebar",   "value": 88 },
-      { "label": "Tackle dari Belakang","value": 76 },
-      { "label": "Senyum ke Kamera",   "value": 93 }
+      {
+        "label": "Adaptasi Posisi",
+        "value": 97
+      },
+      {
+        "label": "Crossing",
+        "value": 88
+      },
+      {
+        "label": "Tekel",
+        "value": 76
+      },
+      {
+        "label": "Ketenangan",
+        "value": 93
+      }
     ],
     "quote": "Kesalahan adalah bagian dari proses."
   },
@@ -148,10 +280,22 @@
     "gk": false,
     "overall": 86,
     "skills": [
-      { "label": "Tendangan Pisang Busuk",  "value": 88 },
-      { "label": "Umpan Terobosan Ngawur",  "value": 82 },
-      { "label": "Dribel di Tempat",        "value": 79 },
-      { "label": "Teriakan Motivasi",       "value": 95 }
+      {
+        "label": "Tendangan Lengkung",
+        "value": 88
+      },
+      {
+        "label": "Umpan Terobosan",
+        "value": 82
+      },
+      {
+        "label": "Kontrol Bola",
+        "value": 79
+      },
+      {
+        "label": "Motivasi Tim",
+        "value": 95
+      }
     ],
     "quote": "Semangat dulu, teknik belakangan."
   },
@@ -161,10 +305,22 @@
     "gk": false,
     "overall": 80,
     "skills": [
-      { "label": "Bijak Tanpa Berlari", "value": 99 },
-      { "label": "Arahan dari Jauh",   "value": 96 },
-      { "label": "Tackling Verbal",    "value": 88 },
-      { "label": "Stamina Bijaksana",  "value": 12 }
+      {
+        "label": "Pengalaman",
+        "value": 99
+      },
+      {
+        "label": "Organisasi Tim",
+        "value": 96
+      },
+      {
+        "label": "Kepemimpinan",
+        "value": 88
+      },
+      {
+        "label": "Manajemen Energi",
+        "value": 12
+      }
     ],
     "quote": "Mengapa lari kalau bisa bicara?"
   },
@@ -174,10 +330,22 @@
     "gk": false,
     "overall": 83,
     "skills": [
-      { "label": "Header ke Tribun",       "value": 91 },
-      { "label": "Kontrol Pertama Meleset","value": 86 },
-      { "label": "Sprint Pendek Maksimal", "value": 82 },
-      { "label": "Ngilang di Kotak",       "value": 94 }
+      {
+        "label": "Heading",
+        "value": 91
+      },
+      {
+        "label": "Kontrol Pertama",
+        "value": 86
+      },
+      {
+        "label": "Akselerasi",
+        "value": 82
+      },
+      {
+        "label": "Pergerakan Tanpa Bola",
+        "value": 94
+      }
     ],
     "quote": "Saya selalu di posisi yang tepat. Sayangnya bola tidak."
   },
@@ -187,10 +355,22 @@
     "gk": false,
     "overall": 80,
     "skills": [
-      { "label": "Crossing ke Parkiran",    "value": 87 },
-      { "label": "Dribel Zig-zag Monoton",  "value": 81 },
-      { "label": "Stamina Kucing",          "value": 80 },
-      { "label": "Protes Tiap Bola Hilang", "value": 93 }
+      {
+        "label": "Crossing",
+        "value": 87
+      },
+      {
+        "label": "Dribel",
+        "value": 81
+      },
+      {
+        "label": "Stamina",
+        "value": 80
+      },
+      {
+        "label": "Mental Bertanding",
+        "value": 93
+      }
     ],
     "quote": "Lapangan kiri adalah kerajaan saya."
   },
@@ -200,10 +380,22 @@
     "gk": false,
     "overall": 81,
     "skills": [
-      { "label": "Stamina Kura-kura",     "value": 80 },
-      { "label": "Umpan Balik Konsisten", "value": 95 },
-      { "label": "Kontrol Bola Pelan",    "value": 84 },
-      { "label": "Bijak Hemat Energi",    "value": 98 }
+      {
+        "label": "Stamina",
+        "value": 80
+      },
+      {
+        "label": "Sirkulasi Bola",
+        "value": 95
+      },
+      {
+        "label": "Kontrol Bola",
+        "value": 84
+      },
+      {
+        "label": "Pengambilan Keputusan",
+        "value": 98
+      }
     ],
     "quote": "Perlahan tapi pasti. Terutama perlahan."
   },
@@ -213,10 +405,22 @@
     "gk": false,
     "overall": 85,
     "skills": [
-      { "label": "Protes Wasit Pro",        "value": 99 },
-      { "label": "Tendangan Keras Meleset", "value": 87 },
-      { "label": "Sprint Satu Kali",        "value": 91 },
-      { "label": "Rayakan Gol Lebih Lama",  "value": 96 }
+      {
+        "label": "Mental Bertanding",
+        "value": 99
+      },
+      {
+        "label": "Tendangan Jarak Jauh",
+        "value": 87
+      },
+      {
+        "label": "Akselerasi",
+        "value": 91
+      },
+      {
+        "label": "Karisma",
+        "value": 96
+      }
     ],
     "quote": "Wasit salah. Selalu."
   },
@@ -226,10 +430,22 @@
     "gk": false,
     "overall": 80,
     "skills": [
-      { "label": "Tendangan Nenek",     "value": 85 },
-      { "label": "Overlap Semangat",    "value": 89 },
-      { "label": "Balik Posisi Lambat", "value": 92 },
-      { "label": "Motivasi Tanpa Teknik","value": 88 }
+      {
+        "label": "Tendangan Keras",
+        "value": 85
+      },
+      {
+        "label": "Overlap",
+        "value": 89
+      },
+      {
+        "label": "Recovery Run",
+        "value": 92
+      },
+      {
+        "label": "Semangat Tim",
+        "value": 88
+      }
     ],
     "quote": "Saya bermain dengan hati, bukan kaki."
   },
@@ -239,10 +455,22 @@
     "gk": false,
     "overall": 82,
     "skills": [
-      { "label": "Ngaku Cedera Pas Kalah", "value": 99 },
-      { "label": "Tekel Dramatis",         "value": 88 },
-      { "label": "Heading Oke",            "value": 81 },
-      { "label": "Hilang di 2nd Half",     "value": 93 }
+      {
+        "label": "Daya Juang",
+        "value": 99
+      },
+      {
+        "label": "Tekel",
+        "value": 88
+      },
+      {
+        "label": "Heading",
+        "value": 81
+      },
+      {
+        "label": "Konsistensi",
+        "value": 93
+      }
     ],
     "quote": "Lutut saya tahu kapan harus istirahat."
   },
@@ -252,10 +480,22 @@
     "gk": false,
     "overall": 81,
     "skills": [
-      { "label": "Dribel Sampai Keluar", "value": 92 },
-      { "label": "Kontrol di Garis",     "value": 86 },
-      { "label": "Crossing Terlambat",   "value": 84 },
-      { "label": "Minta Bola Terus",     "value": 97 }
+      {
+        "label": "Dribel",
+        "value": 92
+      },
+      {
+        "label": "Kontrol Bola",
+        "value": 86
+      },
+      {
+        "label": "Crossing",
+        "value": 84
+      },
+      {
+        "label": "Mencari Bola",
+        "value": 97
+      }
     ],
     "quote": "Bola harus ke saya dulu."
   },
@@ -265,10 +505,22 @@
     "gk": false,
     "overall": 84,
     "skills": [
-      { "label": "Lari Banyak Gol Nihil", "value": 94 },
-      { "label": "Crossing Cepat Ngaco",  "value": 88 },
-      { "label": "Sprint Berulang",       "value": 92 },
-      { "label": "Keluhan Tiap Babak",    "value": 86 }
+      {
+        "label": "Mobilitas",
+        "value": 94
+      },
+      {
+        "label": "Crossing",
+        "value": 88
+      },
+      {
+        "label": "Akselerasi",
+        "value": 92
+      },
+      {
+        "label": "Daya Juang",
+        "value": 86
+      }
     ],
     "quote": "Kilometer paling banyak. Gol paling sedikit."
   },
@@ -278,10 +530,22 @@
     "gk": false,
     "overall": 86,
     "skills": [
-      { "label": "Taktik Ngawur Lvl 10",  "value": 93 },
-      { "label": "Atur Permainan Sendiri", "value": 96 },
-      { "label": "Umpan Visioner",         "value": 89 },
-      { "label": "Tidak Dituruti",         "value": 97 }
+      {
+        "label": "Visi Permainan",
+        "value": 93
+      },
+      {
+        "label": "Kepemimpinan",
+        "value": 96
+      },
+      {
+        "label": "Umpan Kunci",
+        "value": 89
+      },
+      {
+        "label": "Pengaruh Permainan",
+        "value": 97
+      }
     ],
     "quote": "Saya pelatih, bukan pemain. Keduanya."
   },
@@ -291,10 +555,22 @@
     "gk": false,
     "overall": 80,
     "skills": [
-      { "label": "Semangat Tanpa Teknik", "value": 97 },
-      { "label": "Tekel Bulat",           "value": 85 },
-      { "label": "Teriak Paling Keras",   "value": 95 },
-      { "label": "Posisi Ngawur",         "value": 88 }
+      {
+        "label": "Semangat Bertanding",
+        "value": 97
+      },
+      {
+        "label": "Tekel",
+        "value": 85
+      },
+      {
+        "label": "Komunikasi",
+        "value": 95
+      },
+      {
+        "label": "Mobilitas",
+        "value": 88
+      }
     ],
     "quote": "Yang penting totalitas."
   },
@@ -304,10 +580,22 @@
     "gk": false,
     "overall": 82,
     "skills": [
-      { "label": "Umpan Balik Terus", "value": 96 },
-      { "label": "Kontrol Aman",      "value": 88 },
-      { "label": "Dribel Pendek",     "value": 82 },
-      { "label": "Ngomong Terus",     "value": 94 }
+      {
+        "label": "Sirkulasi Bola",
+        "value": 96
+      },
+      {
+        "label": "Kontrol Bola",
+        "value": 88
+      },
+      {
+        "label": "Dribel Pendek",
+        "value": 82
+      },
+      {
+        "label": "Komunikasi",
+        "value": 94
+      }
     ],
     "quote": "Bola di saya, aman. Di orang lain, tidak."
   },
@@ -317,10 +605,22 @@
     "gk": false,
     "overall": 83,
     "skills": [
-      { "label": "Jersey Paling Ketat", "value": 99 },
-      { "label": "Sprint Pendek",       "value": 86 },
-      { "label": "Gol Jarang",          "value": 72 },
-      { "label": "Selebrasi Siap",      "value": 98 }
+      {
+        "label": "Percaya Diri",
+        "value": 99
+      },
+      {
+        "label": "Akselerasi",
+        "value": 86
+      },
+      {
+        "label": "Finishing",
+        "value": 72
+      },
+      {
+        "label": "Karisma",
+        "value": 98
+      }
     ],
     "quote": "Penampilan adalah setengah dari permainan."
   },
@@ -330,10 +630,22 @@
     "gk": false,
     "overall": 81,
     "skills": [
-      { "label": "Penalti Kena Tiang",   "value": 91 },
-      { "label": "Tendangan Jauh Meleset","value": 84 },
-      { "label": "Kontrol Buruk",        "value": 78 },
-      { "label": "Semangat Terjaga",     "value": 89 }
+      {
+        "label": "Eksekusi Bola Mati",
+        "value": 91
+      },
+      {
+        "label": "Tendangan Jarak Jauh",
+        "value": 84
+      },
+      {
+        "label": "Kontrol Bola",
+        "value": 78
+      },
+      {
+        "label": "Semangat Bertanding",
+        "value": 89
+      }
     ],
     "quote": "Tiang itu musuh bebuyutan saya."
   },
@@ -343,10 +655,22 @@
     "gk": false,
     "overall": 80,
     "skills": [
-      { "label": "Kontrol Pakai Lutut",  "value": 86 },
-      { "label": "Umpan ke Tribun",      "value": 82 },
-      { "label": "Jalan Cepat Menguasai","value": 90 },
-      { "label": "Defensif Setengah Hati","value": 84 }
+      {
+        "label": "Kontrol Bola",
+        "value": 86
+      },
+      {
+        "label": "Umpan Jauh",
+        "value": 82
+      },
+      {
+        "label": "Mobilitas",
+        "value": 90
+      },
+      {
+        "label": "Disiplin Posisi",
+        "value": 84
+      }
     ],
     "quote": "Kaki kiri saya lebih pintar dari kanan."
   },
@@ -356,10 +680,22 @@
     "gk": false,
     "overall": 85,
     "skills": [
-      { "label": "Injury Time Specialist",  "value": 96 },
-      { "label": "Muncul di Momen Penting", "value": 93 },
-      { "label": "Stamina Aneh",            "value": 88 },
-      { "label": "Tendangan Mendadak",      "value": 91 }
+      {
+        "label": "Impact Player",
+        "value": 96
+      },
+      {
+        "label": "Momen Penting",
+        "value": 93
+      },
+      {
+        "label": "Stamina",
+        "value": 88
+      },
+      {
+        "label": "Finishing Cepat",
+        "value": 91
+      }
     ],
     "quote": "Saya baru mulai main di menit 80."
   },
@@ -369,10 +705,22 @@
     "gk": false,
     "overall": 80,
     "skills": [
-      { "label": "Jalan Cepat Menguasai", "value": 92 },
-      { "label": "Bola Hilang Tiap Duel", "value": 86 },
-      { "label": "Posisi Statis",          "value": 88 },
-      { "label": "Protes Paling Lama",     "value": 95 }
+      {
+        "label": "Mobilitas",
+        "value": 92
+      },
+      {
+        "label": "Duel Satu Lawan Satu",
+        "value": 86
+      },
+      {
+        "label": "Jaga Posisi",
+        "value": 88
+      },
+      {
+        "label": "Mental Bertanding",
+        "value": 95
+      }
     ],
     "quote": "Saya menguasai area ini. Secara verbal."
   },
@@ -382,23 +730,47 @@
     "gk": false,
     "overall": 81,
     "skills": [
-      { "label": "Bola Hilang Tiap Duel", "value": 88 },
-      { "label": "Sprint Sporadis",       "value": 84 },
-      { "label": "Crossing Malam",        "value": 80 },
-      { "label": "Teriakan Motivasi",     "value": 93 }
+      {
+        "label": "Duel Fisik",
+        "value": 88
+      },
+      {
+        "label": "Akselerasi",
+        "value": 84
+      },
+      {
+        "label": "Crossing",
+        "value": 80
+      },
+      {
+        "label": "Motivasi Tim",
+        "value": 93
+      }
     ],
     "quote": "Duel itu soal keberanian. Bolanya nanti."
   },
   {
     "id": 31,
-    "name": "ddk",
+    "name": "Didik",
     "gk": false,
     "overall": 99,
     "skills": [
-      { "label": "Identitas Dirahasiakan", "value": 99 },
-      { "label": "Skill Tidak Diketahui",  "value": 99 },
-      { "label": "Asal Usul Misterius",    "value": 99 },
-      { "label": "Rating Mencurigakan",    "value": 99 }
+      {
+        "label": "Aura Misterius",
+        "value": 99
+      },
+      {
+        "label": "Potensi Tersembunyi",
+        "value": 99
+      },
+      {
+        "label": "Pengaruh Tim",
+        "value": 99
+      },
+      {
+        "label": "Rating Legendaris",
+        "value": 99
+      }
     ],
     "quote": "..."
   },
@@ -408,10 +780,22 @@
     "gk": false,
     "overall": 80,
     "skills": [
-      { "label": "Kelelahan di Menit 3",  "value": 97 },
-      { "label": "Semangat Awal Tinggi",  "value": 95 },
-      { "label": "Stamina Lilin",         "value": 80 },
-      { "label": "Protes Kelelahan",      "value": 91 }
+      {
+        "label": "Start Cepat",
+        "value": 97
+      },
+      {
+        "label": "Intensitas Awal",
+        "value": 95
+      },
+      {
+        "label": "Stamina",
+        "value": 80
+      },
+      {
+        "label": "Daya Juang",
+        "value": 91
+      }
     ],
     "quote": "Saya sudah habiskan semua di pemanasan."
   },
@@ -421,11 +805,323 @@
     "gk": false,
     "overall": 82,
     "skills": [
-      { "label": "Gol Salah Gawang",      "value": 92 },
-      { "label": "Selebrasi Sebelum Gol", "value": 88 },
-      { "label": "Sprint Tidak Tepat",    "value": 84 },
-      { "label": "Optimisme Tinggi",      "value": 97 }
+      {
+        "label": "Insting Menyerang",
+        "value": 92
+      },
+      {
+        "label": "Percaya Diri",
+        "value": 88
+      },
+      {
+        "label": "Akselerasi",
+        "value": 84
+      },
+      {
+        "label": "Optimisme",
+        "value": 97
+      }
     ],
     "quote": "Itu bukan salah gawang, itu kreativitas."
+  },
+  {
+    "id": 34,
+    "name": "Muaz",
+    "gk": false,
+    "overall": 83,
+    "skills": [
+      {
+        "label": "Umpan Cepat",
+        "value": 88
+      },
+      {
+        "label": "Sprint Samping",
+        "value": 85
+      },
+      {
+        "label": "Pressing Rajin",
+        "value": 91
+      },
+      {
+        "label": "Finishing Nekat",
+        "value": 79
+      }
+    ],
+    "quote": "Kalau bisa lari, kenapa jalan."
+  },
+  {
+    "id": 35,
+    "name": "Tito",
+    "gk": false,
+    "overall": 84,
+    "skills": [
+      {
+        "label": "Kontrol Tenang",
+        "value": 87
+      },
+      {
+        "label": "Umpan Pendek",
+        "value": 90
+      },
+      {
+        "label": "Jaga Tempo",
+        "value": 88
+      },
+      {
+        "label": "Tembakan Jarak Jauh",
+        "value": 82
+      }
+    ],
+    "quote": "Main simpel, hasil maksimal."
+  },
+  {
+    "id": 36,
+    "name": "Antok",
+    "gk": false,
+    "overall": 82,
+    "skills": [
+      {
+        "label": "Tekel Bersih",
+        "value": 89
+      },
+      {
+        "label": "Duel Udara",
+        "value": 86
+      },
+      {
+        "label": "Jaga Area",
+        "value": 88
+      },
+      {
+        "label": "Umpan Aman",
+        "value": 81
+      }
+    ],
+    "quote": "Lewat orangnya boleh, bolanya jangan."
+  },
+  {
+    "id": 37,
+    "name": "Rohmad",
+    "gk": false,
+    "overall": 85,
+    "skills": [
+      {
+        "label": "Visi Permainan",
+        "value": 91
+      },
+      {
+        "label": "Umpan Terobosan",
+        "value": 89
+      },
+      {
+        "label": "Kontrol Pertama",
+        "value": 87
+      },
+      {
+        "label": "Ketenangan",
+        "value": 90
+      }
+    ],
+    "quote": "Bola bergerak lebih cepat daripada pemain."
+  },
+  {
+    "id": 38,
+    "name": "Hazfi",
+    "gk": false,
+    "overall": 82,
+    "skills": [
+      {
+        "label": "Akselerasi",
+        "value": 88
+      },
+      {
+        "label": "Dribel Pendek",
+        "value": 86
+      },
+      {
+        "label": "Cut Inside",
+        "value": 84
+      },
+      {
+        "label": "Percaya Diri",
+        "value": 91
+      }
+    ],
+    "quote": "Coba dulu, urusan berhasil belakangan."
+  },
+  {
+    "id": 39,
+    "name": "Hosa",
+    "gk": false,
+    "overall": 81,
+    "skills": [
+      {
+        "label": "Kerja Keras",
+        "value": 92
+      },
+      {
+        "label": "Jaga Posisi",
+        "value": 85
+      },
+      {
+        "label": "Tekanan Tinggi",
+        "value": 88
+      },
+      {
+        "label": "Stamina",
+        "value": 84
+      }
+    ],
+    "quote": "Yang penting tim jalan."
+  },
+  {
+    "id": 40,
+    "name": "Bingar",
+    "gk": false,
+    "overall": 84,
+    "skills": [
+      {
+        "label": "Tembakan Keras",
+        "value": 91
+      },
+      {
+        "label": "Duel Fisik",
+        "value": 87
+      },
+      {
+        "label": "Semangat Tinggi",
+        "value": 93
+      },
+      {
+        "label": "Penyelesaian Akhir",
+        "value": 81
+      }
+    ],
+    "quote": "Kalau sudah nendang, dengar suaranya dulu."
+  },
+  {
+    "id": 41,
+    "name": "Ilham",
+    "gk": false,
+    "overall": 83,
+    "skills": [
+      {
+        "label": "Umpan Satu Sentuhan",
+        "value": 88
+      },
+      {
+        "label": "Mobilitas",
+        "value": 87
+      },
+      {
+        "label": "Cari Ruang",
+        "value": 85
+      },
+      {
+        "label": "Kerja Sama Tim",
+        "value": 91
+      }
+    ],
+    "quote": "Main bola itu soal timing."
+  },
+  {
+    "id": 42,
+    "name": "Andi",
+    "gk": false,
+    "overall": 82,
+    "skills": [
+      {
+        "label": "Overlap Aktif",
+        "value": 89
+      },
+      {
+        "label": "Crossing Cepat",
+        "value": 84
+      },
+      {
+        "label": "Recovery Run",
+        "value": 87
+      },
+      {
+        "label": "Determinasi",
+        "value": 90
+      }
+    ],
+    "quote": "Naik boleh, balik wajib."
+  },
+  {
+    "id": 43,
+    "name": "Brisma",
+    "gk": false,
+    "overall": 84,
+    "skills": [
+      {
+        "label": "Kontrol Bola",
+        "value": 89
+      },
+      {
+        "label": "Akurasi Umpan",
+        "value": 90
+      },
+      {
+        "label": "Kreativitas",
+        "value": 86
+      },
+      {
+        "label": "Tempo Permainan",
+        "value": 87
+      }
+    ],
+    "quote": "Bola harus punya tujuan."
+  },
+  {
+    "id": 44,
+    "name": "Abdul",
+    "gk": false,
+    "overall": 83,
+    "skills": [
+      {
+        "label": "Finishing Cepat",
+        "value": 88
+      },
+      {
+        "label": "Pergerakan Tanpa Bola",
+        "value": 90
+      },
+      {
+        "label": "Insting Gol",
+        "value": 87
+      },
+      {
+        "label": "Tekanan ke Bek",
+        "value": 84
+      }
+    ],
+    "quote": "Peluang kecil tetap peluang."
+  },
+  {
+    "id": 45,
+    "name": "Fuat",
+    "gk": false,
+    "overall": 82,
+    "skills": [
+      {
+        "label": "Jaga Bola",
+        "value": 88
+      },
+      {
+        "label": "Duel Badan",
+        "value": 86
+      },
+      {
+        "label": "Pantang Menyerah",
+        "value": 92
+      },
+      {
+        "label": "Tembakan Mendadak",
+        "value": 83
+      }
+    ],
+    "quote": "Kalau belum peluit akhir, masih bisa."
   }
 ]

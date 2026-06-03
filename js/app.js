@@ -95,12 +95,18 @@ function renderMatches() {
    SQUAD
 ============================================================ */
 let currentFilter = 'all';
+let currentSearchQuery = '';
 
 function renderSquad(filter) {
   filter = filter || currentFilter;
-  const filtered = filter === 'all' ? PLAYERS
+  let filtered = filter === 'all' ? PLAYERS
     : filter === 'gk' ? PLAYERS.filter(p => p.gk)
     : PLAYERS.filter(p => !p.gk);
+
+  if (currentSearchQuery) {
+    const q = currentSearchQuery.toLowerCase();
+    filtered = filtered.filter(p => p.name.toLowerCase().includes(q));
+  }
 
   document.getElementById('squad-count').textContent = filtered.length + ' Players';
 
@@ -138,8 +144,16 @@ function renderSquad(filter) {
 function filterSquad(type, btn) {
   currentFilter = type;
   document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  renderSquad(type);
+  if (btn) btn.classList.add('active');
+  renderSquad();
+}
+
+function searchSquad() {
+  const input = document.getElementById('squad-search');
+  if (input) {
+    currentSearchQuery = input.value.trim();
+    renderSquad();
+  }
 }
 
 /* ============================================================

@@ -249,9 +249,23 @@ body {
 ====================================================== */
 .squad-wrap { padding: 14px; }
 
-/* Filter tabs */
+/* Filter tabs and search */
 .filter-bar {
-  display: flex; gap: 6px; margin-bottom: 12px;
+  display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap;
+}
+.squad-search-input {
+  flex: 1; min-width: 120px;
+  background: var(--navy);
+  border: 1px solid rgba(37,99,235,0.28);
+  padding: 5px 10px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 13px;
+  color: var(--text-main);
+  outline: none;
+  border-radius: 2px;
+}
+.squad-search-input:focus {
+  border-color: var(--gold);
 }
 .filter-btn {
   font-family: 'Barlow Condensed', sans-serif;

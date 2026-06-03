@@ -152,7 +152,7 @@ function openCard(i) {
   document.getElementById('fc-rating').textContent = p.overall;
   document.getElementById('fc-pos').textContent    = p.gk ? 'GK' : 'PLY';
   document.getElementById('fc-name').textContent   = p.name.toUpperCase();
-  document.getElementById('fc-avatar').textContent = p.gk ? '🧤' : AVATARS[i % AVATARS.length];
+  document.getElementById('fc-avatar').innerHTML   = '<img src="assets/anon.png" alt="Player" draggable="false" />';
   document.getElementById('fc-quote').textContent  = '"' + p.quote + '"';
 
   // Build 2-column stats (CodePen style: left col + right col)

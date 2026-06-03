@@ -391,7 +391,7 @@ body {
   position: relative;
   display: flex;
   color: #e9cc74;
-  padding: 0 1.5rem;
+  padding: 0 2.2rem;
 }
 
 .fut-player-card .player-master-info {
@@ -403,7 +403,7 @@ body {
 }
 
 .fut-player-card .player-master-info .player-rating {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 .fut-player-card .player-master-info .player-position {
@@ -425,8 +425,8 @@ body {
 
 .fut-player-card .player-master-info .player-club {
   display: block;
-  width: 2rem;
-  height: 36px;
+  width: 2.8rem;
+  height: 48px;
 }
 
 .fut-player-card .player-master-info .player-club img {
@@ -446,9 +446,17 @@ body {
 }
 
 .fut-player-card .player-avatar {
-  font-size: 80px;
-  line-height: 1;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+}
+.fut-player-card .player-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .fut-player-card .player-card-bottom {
@@ -459,7 +467,7 @@ body {
   display: block;
   padding: 0.3rem 0;
   color: #e9cc74;
-  width: 90%;
+  width: 82%;
   margin: 0 auto;
   height: auto;
   position: relative;
@@ -496,7 +504,7 @@ body {
 
 .fut-player-card .player-features .player-features-col span {
   display: flex;
-  font-size: 1rem;
+  font-size: 0.85rem;
   text-transform: uppercase;
 }
 
@@ -519,8 +527,8 @@ body {
   font-style: italic;
   font-size: 0.7rem;
   color: rgba(233, 204, 116, 0.5);
-  margin-top: 0.3rem;
-  padding-top: 0.3rem;
+  margin-top: 0;
+  padding-top: 0.1rem;
   border-top: 1px solid rgba(233, 204, 116, 0.1);
 }
 

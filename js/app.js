@@ -167,17 +167,17 @@ function openCard(i) {
   for (let r = 0; r < maxLen; r++) {
     const l = left[r];
     const ri = right[r];
-    const abbr = s => s.label.split(' ').map(w => w[0]).join('').slice(0,3).toUpperCase();
+    const formatLbl = s => s.label.toUpperCase();
     if (l) {
       html += `<div class="fc-stat-row">
         <span class="fc-stat-val">${l.value}</span>
-        <span class="fc-stat-lbl" title="${l.label}">${abbr(l)}</span>
+        <span class="fc-stat-lbl" title="${l.label}">${formatLbl(l)}</span>
       </div>`;
     } else { html += '<div></div>'; }
     if (ri) {
       html += `<div class="fc-stat-row">
         <span class="fc-stat-val">${ri.value}</span>
-        <span class="fc-stat-lbl" title="${ri.label}">${abbr(ri)}</span>
+        <span class="fc-stat-lbl" title="${ri.label}">${formatLbl(ri)}</span>
       </div>`;
     } else { html += '<div></div>'; }
   }

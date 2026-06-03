@@ -155,32 +155,27 @@ function openCard(i) {
   document.getElementById('fc-avatar').textContent = p.gk ? '🧤' : AVATARS[i % AVATARS.length];
   document.getElementById('fc-quote').textContent  = '"' + p.quote + '"';
 
-  // Build 2-column stats (label abbreviated to 3 chars like FIFA)
+  // Build 2-column stats (CodePen style: left col + right col)
   const stats = document.getElementById('fc-stats');
-  // Split 4 skills into 2+2
   const half = Math.ceil(p.skills.length / 2);
   const left  = p.skills.slice(0, half);
   const right = p.skills.slice(half);
-  const maxLen = Math.max(left.length, right.length);
 
-  let html = '';
-  for (let r = 0; r < maxLen; r++) {
-    const l = left[r];
-    const ri = right[r];
-    const formatLbl = s => s.label.toUpperCase();
-    if (l) {
-      html += `<div class="fc-stat-row">
-        <span class="fc-stat-val">${l.value}</span>
-        <span class="fc-stat-lbl" title="${l.label}">${formatLbl(l)}</span>
-      </div>`;
-    } else { html += '<div></div>'; }
-    if (ri) {
-      html += `<div class="fc-stat-row">
-        <span class="fc-stat-val">${ri.value}</span>
-        <span class="fc-stat-lbl" title="${ri.label}">${formatLbl(ri)}</span>
-      </div>`;
-    } else { html += '<div></div>'; }
-  }
+  let html = '<div class="player-features-col">';
+  left.forEach(s => {
+    html += `<span>
+      <div class="player-feature-value">${s.value}</div>
+      <div class="player-feature-title">${s.label.toUpperCase()}</div>
+    </span>`;
+  });
+  html += '</div><div class="player-features-col">';
+  right.forEach(s => {
+    html += `<span>
+      <div class="player-feature-value">${s.value}</div>
+      <div class="player-feature-title">${s.label.toUpperCase()}</div>
+    </span>`;
+  });
+  html += '</div>';
   stats.innerHTML = html;
 
   document.getElementById('modal').classList.add('open');

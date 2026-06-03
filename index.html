@@ -6,7 +6,7 @@
   <title>BEDEBAH FC</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Barlow:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Barlow:wght@400;500&family=Saira+Semi+Condensed:wght@300;400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -119,27 +119,32 @@
 </div>
 
 <!-- ============================================================
-     FIFA CARD MODAL
+     FIFA CARD MODAL (FUT Style)
 ============================================================ -->
 <div class="modal-overlay" id="modal" onclick="closeModalOverlay(event)">
-  <div class="fifa-card">
+  <div class="fut-player-card">
     <button class="fc-close" onclick="closeModal()">✕</button>
-    <div class="fifa-card-inner">
-      <div class="fc-top">
-        <div class="fc-left-col">
-          <div class="fc-rating" id="fc-rating">88</div>
-          <div class="fc-pos"    id="fc-pos">GK</div>
-          <div class="fc-flag">🇮🇩</div>
-          <div class="fc-logo">BEDEBAH FC</div>
+    <div class="player-card-top">
+      <div class="player-master-info">
+        <div class="player-rating"><span id="fc-rating">88</span></div>
+        <div class="player-position"><span id="fc-pos">GK</span></div>
+        <div class="player-nation">
+          <img src="assets/indonesia.png" alt="Indonesia" draggable="false" />
         </div>
-        <div class="fc-silhouette" id="fc-avatar">⚽</div>
+        <div class="player-club">
+          <img src="assets/bedebah_fc.png" alt="Bedebah FC" draggable="false" />
+        </div>
       </div>
-      <div class="fc-img-area" style="display:none"></div>
-      <div class="fc-name-bar">
-        <div class="fc-name" id="fc-name">NAMA</div>
+      <div class="player-picture">
+        <div class="player-avatar" id="fc-avatar">⚽</div>
       </div>
-      <div class="fc-stats" id="fc-stats"></div>
-      <div class="fc-quote" id="fc-quote"></div>
+    </div>
+    <div class="player-card-bottom">
+      <div class="player-info">
+        <div class="player-name"><span id="fc-name">NAMA</span></div>
+        <div class="player-features" id="fc-stats"></div>
+        <div class="player-quote" id="fc-quote"></div>
+      </div>
     </div>
   </div>
 </div>

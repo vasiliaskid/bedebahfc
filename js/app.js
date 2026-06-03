@@ -4,35 +4,33 @@
 let PLAYERS = [];
 let MATCHES = [];
 let absensi = {};
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw5igqNgKUuzqCc94rmbLVVTI8CliPAU7c2Cy7pjdYo-jUKDtIkAzHXcxfA5RMNIx6x4Q/exec';
 
 /* ============================================================
    LOAD DATA
 ============================================================ */
 async function loadData() {
   try {
-    const [pRes, mRes] = await Promise.all([
+    const [pRes, mRes, absRes] = await Promise.all([
       fetch('data/players.json'),
-      fetch('data/matches.json')
+      fetch('data/matches.json'),
+      fetch(SCRIPT_URL)
     ]);
     PLAYERS = await pRes.json();
     MATCHES = await mRes.json();
-  } catch (e) {
-    console.error('Gagal load data JSON:', e);
-  }
-  MATCHES.forEach(m => { absensi[m.id] = loadAbsensi(m.id); });
-  init();
-}
+    const sheetData = await absRes.json();
 
-/* ============================================================
-   LOCALSTORAGE ABSENSI
-============================================================ */
-function loadAbsensi(matchId) {
-  try {
-    return JSON.parse(localStorage.getItem('abs_' + matchId) || '[]');
-  } catch { return []; }
-}
-function saveAbsensi(matchId) {
-  localStorage.setItem('abs_' + matchId, JSON.stringify(absensi[matchId]));
+    MATCHES.forEach(m => { absensi[m.id] = []; });
+    sheetData.forEach(row => {
+      const mId = parseInt(row.matchId);
+      if (absensi[mId] && !absensi[mId].includes(row.nama)) {
+        absensi[mId].push(row.nama);
+      }
+    });
+  } catch (e) {
+    console.error('Gagal load data:', e);
+  }
+  init();
 }
 
 /* ============================================================
@@ -223,7 +221,7 @@ function populateAbsensiSelects() {
   });
 }
 
-function handleAbsen() {
+async function handleAbsen() {
   const matchId = parseInt(document.getElementById('sel-match').value);
   const nama    = document.getElementById('sel-nama').value;
   if (!matchId || !nama) { alert('Pilih pertandingan dan nama dulu!'); return; }
@@ -233,16 +231,28 @@ function handleAbsen() {
     showToast(nama + ' sudah terdaftar!', 'Tidak bisa daftar dua kali untuk match yang sama.', 'warn');
     return;
   }
+  
+  // Update UI dulu supaya terasa cepat (Optimistic UI)
   absensi[matchId].push(nama);
-  saveAbsensi(matchId);
-
-  const match = MATCHES.find(m => m.id === matchId);
-  const label = match ? match.day + ' ' + match.month + ' ' + (match.opponent === 'INTERNAL' ? match.competition : 'vs ' + match.opponent) : '';
-  showToast(nama.toUpperCase() + ' SIAP MAIN! ⚽', label + ' — Konfirmasi berhasil dicatat.');
   updateStatHadir();
   renderHadir();
   document.getElementById('sel-match').value = '';
   document.getElementById('sel-nama').value  = '';
+
+  const match = MATCHES.find(m => m.id === matchId);
+  const label = match ? match.day + ' ' + match.month + ' ' + (match.opponent === 'INTERNAL' ? match.competition : 'vs ' + match.opponent) : '';
+  showToast(nama.toUpperCase() + ' SIAP MAIN! ⚽', label + ' — Sedang menyimpan ke server...', 'info');
+
+  try {
+    await fetch(SCRIPT_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain' },
+      body: JSON.stringify({ action: 'hadir', matchId: matchId, nama: nama })
+    });
+  } catch(e) {
+    console.error('Error saving:', e);
+    showToast('Gagal Simpan!', 'Silakan periksa koneksi internet.', 'warn');
+  }
 }
 
 function showToast(t, s, type) {
@@ -277,12 +287,23 @@ function renderHadir() {
   document.getElementById('hadir-count').textContent = total + ' pemain';
 }
 
-function hapusHadir(matchId, nama) {
+async function hapusHadir(matchId, nama) {
   if (!confirm('Hapus ' + nama + ' dari daftar hadir?')) return;
+  
   absensi[matchId] = absensi[matchId].filter(n => n !== nama);
-  saveAbsensi(matchId);
   updateStatHadir();
   renderHadir();
+
+  try {
+    await fetch(SCRIPT_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain' },
+      body: JSON.stringify({ action: 'batal', matchId: matchId, nama: nama })
+    });
+  } catch(e) {
+    console.error('Error deleting:', e);
+    showToast('Gagal Hapus!', 'Silakan periksa koneksi internet.', 'warn');
+  }
 }
 
 /* ============================================================

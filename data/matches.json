@@ -9,7 +9,7 @@
     "venue": "Lapangan Nglorog",
     "time": "15.30",
     "type": "trofeo",
-    "htm": "± "
+    "htm": "± Rp. 20.000,-"
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "venue": "Morley Minisoccer",
     "time": "18.30",
     "type": "berikutnya",
-    "htm": "± "
+    "htm": "± Rp. 50.000,-"
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
     "venue": "Lapangan Polres Sragen",
     "time": "16.00",
     "type": "berikutnya",
-    "htm": "± "
+    "htm": "± Rp. 20.000,-"
   },
   {
     "id": 4,
@@ -45,6 +45,6 @@
     "venue": "Morley Minisoccer",
     "time": "18.30",
     "type": "berikutnya",
-    "htm": "± "
+    "htm": "± Rp. 50.000,-"
   }
 ]

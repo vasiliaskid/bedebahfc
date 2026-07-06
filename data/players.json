@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Tetuko",
     "gk": true,
-    "overall": 88,
+    "overall": 92,
     "skills": [
       {
         "label": "Sprint Modal",
@@ -28,7 +28,7 @@
     "id": 2,
     "name": "Galang",
     "gk": true,
-    "overall": 85,
+    "overall": 92,
     "skills": [
       {
         "label": "Mental Kalem",
@@ -303,7 +303,7 @@
     "id": 13,
     "name": "P Urip",
     "gk": false,
-    "overall": 87,
+    "overall": 92,
     "skills": [
       {
         "label": "Duel Sengol",
@@ -428,7 +428,7 @@
     "id": 18,
     "name": "Nasrun",
     "gk": false,
-    "overall": 85,
+    "overall": 95,
     "skills": [
       {
         "label": "Rebound Modal",
@@ -478,7 +478,7 @@
     "id": 20,
     "name": "Arya",
     "gk": false,
-    "overall": 87,
+    "overall": 92,
     "skills": [
       {
         "label": "Intersep Modal",
@@ -1003,7 +1003,7 @@
     "id": 41,
     "name": "Ilham",
     "gk": false,
-    "overall": 89,
+    "overall": 94,
     "skills": [
       {
         "label": "Telat Ngejar",

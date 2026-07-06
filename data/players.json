@@ -6,11 +6,11 @@
     "overall": 92,
     "skills": [
       {
-        "label": "Sprint Modal",
+        "label": "Sprint Nekat",
         "value": 96
       },
       {
-        "label": "Sundul Kena",
+        "label": "Sundul Asal Kena",
         "value": 85
       },
       {
@@ -56,11 +56,11 @@
     "overall": 91,
     "skills": [
       {
-        "label": "Passing Modal",
+        "label": "Passing Nekat",
         "value": 99
       },
       {
-        "label": "Lemes Sprint",
+        "label": "Sprint Lemes",
         "value": 88
       },
       {
@@ -89,11 +89,11 @@
         "value": 85
       },
       {
-        "label": "Yakin Duel",
+        "label": "Duel Yakin",
         "value": 94
       },
       {
-        "label": "Modal Sprint",
+        "label": "Sprint Dengkul",
         "value": 85
       }
     ],
@@ -110,15 +110,15 @@
         "value": 99
       },
       {
-        "label": "Otak Yakin",
+        "label": "Game IQ Tinggi",
         "value": 89
       },
       {
-        "label": "Blok Modal",
+        "label": "Blok Dengkul",
         "value": 85
       },
       {
-        "label": "Giring Untung",
+        "label": "Giring Hoki",
         "value": 86
       }
     ],
@@ -143,7 +143,7 @@
         "value": 91
       },
       {
-        "label": "Kuat Sprint",
+        "label": "Sprint Kuat",
         "value": 96
       }
     ],
@@ -210,7 +210,7 @@
         "value": 92
       },
       {
-        "label": "Dribel Kena",
+        "label": "Dribel Hoki",
         "value": 96
       },
       {
@@ -218,7 +218,7 @@
         "value": 88
       },
       {
-        "label": "Modal Nekat",
+        "label": "Mentalitas Nekat",
         "value": 93
       }
     ],
@@ -239,7 +239,7 @@
         "value": 86
       },
       {
-        "label": "Kontrol Grasa",
+        "label": "Kontrol Grusu",
         "value": 84
       },
       {
@@ -293,7 +293,7 @@
         "value": 95
       },
       {
-        "label": "Salah Tendang",
+        "label": "Tendangan Nyasar",
         "value": 93
       }
     ],
@@ -310,11 +310,11 @@
         "value": 98
       },
       {
-        "label": "Nendang Salah",
+        "label": "Tendangan Meleset",
         "value": 93
       },
       {
-        "label": "Sundul Modal",
+        "label": "Sundul Dengkul",
         "value": 84
       },
       {
@@ -343,7 +343,7 @@
         "value": 87
       },
       {
-        "label": "Otak Panik",
+        "label": "Keputusan Panik",
         "value": 87
       }
     ],
@@ -360,7 +360,7 @@
         "value": 88
       },
       {
-        "label": "Yakin Sprint",
+        "label": "Sprint PD",
         "value": 92
       },
       {
@@ -368,7 +368,7 @@
         "value": 93
       },
       {
-        "label": "Bola Mental",
+        "label": "Bola Rebound",
         "value": 90
       }
     ],
@@ -393,7 +393,7 @@
         "value": 99
       },
       {
-        "label": "Salah Sliding",
+        "label": "Sliding Meleset",
         "value": 92
       }
     ],
@@ -406,11 +406,11 @@
     "overall": 85,
     "skills": [
       {
-        "label": "Dribel Modal",
+        "label": "Dribel Dengkul",
         "value": 86
       },
       {
-        "label": "Blok Untung",
+        "label": "Blok Hoki",
         "value": 97
       },
       {
@@ -418,7 +418,7 @@
         "value": 92
       },
       {
-        "label": "Salah Kontrol",
+        "label": "Kontrol Meleset",
         "value": 85
       }
     ],
@@ -431,7 +431,7 @@
     "overall": 95,
     "skills": [
       {
-        "label": "Rebound Modal",
+        "label": "Rebound Dengkul",
         "value": 94
       },
       {
@@ -439,7 +439,7 @@
         "value": 88
       },
       {
-        "label": "Cover Ala",
+        "label": "Cover Kadarnya",
         "value": 92
       },
       {
@@ -460,7 +460,7 @@
         "value": 97
       },
       {
-        "label": "Nendang Modal",
+        "label": "Tendangan Dengkul",
         "value": 84
       },
       {
@@ -481,11 +481,11 @@
     "overall": 92,
     "skills": [
       {
-        "label": "Intersep Modal",
+        "label": "Intersep Dengkul",
         "value": 85
       },
       {
-        "label": "Tackle Untung",
+        "label": "Tackle Hoki",
         "value": 95
       },
       {
@@ -514,11 +514,11 @@
         "value": 93
       },
       {
-        "label": "Marking Modal",
+        "label": "Marking Dengkul",
         "value": 95
       },
       {
-        "label": "Tackle Modal",
+        "label": "Tackle Dengkul",
         "value": 85
       }
     ],
@@ -531,7 +531,7 @@
     "overall": 90,
     "skills": [
       {
-        "label": "Shooting Modal",
+        "label": "Shooting Dengkul",
         "value": 90
       },
       {
@@ -539,7 +539,7 @@
         "value": 91
       },
       {
-        "label": "Kaki Modal",
+        "label": "Kaki Dengkul",
         "value": 87
       },
       {
@@ -568,7 +568,7 @@
         "value": 91
       },
       {
-        "label": "Otak Nekat",
+        "label": "Keputusan Nekat",
         "value": 89
       }
     ],
@@ -581,7 +581,7 @@
     "overall": 87,
     "skills": [
       {
-        "label": "Intersep Untung",
+        "label": "Intersep Hoki",
         "value": 97
       },
       {
@@ -614,7 +614,7 @@
         "value": 92
       },
       {
-        "label": "Salah Sundul",
+        "label": "Sundul Meleset",
         "value": 89
       },
       {
@@ -764,7 +764,7 @@
         "value": 97
       },
       {
-        "label": "Crossing Modal",
+        "label": "Crossing Dengkul",
         "value": 95
       },
       {
@@ -781,11 +781,11 @@
     "overall": 91,
     "skills": [
       {
-        "label": "Sprint Untung",
+        "label": "Sprint Hoki",
         "value": 87
       },
       {
-        "label": "Kuat Duel",
+        "label": "Duel Kuat",
         "value": 96
       },
       {
@@ -864,11 +864,11 @@
         "value": 97
       },
       {
-        "label": "Sundul Untung",
+        "label": "Sundul Hoki",
         "value": 94
       },
       {
-        "label": "Umpan Kena",
+        "label": "Umpan Tepat",
         "value": 96
       }
     ],
@@ -881,7 +881,7 @@
     "overall": 89,
     "skills": [
       {
-        "label": "Otak Modal",
+        "label": "Playmaking Nekat",
         "value": 88
       },
       {
@@ -918,7 +918,7 @@
         "value": 84
       },
       {
-        "label": "Lari Nafas",
+        "label": "Lari Ngos-ngosan",
         "value": 93
       }
     ],
@@ -931,7 +931,7 @@
     "overall": 89,
     "skills": [
       {
-        "label": "Modal Dorong",
+        "label": "Dorong Nekat",
         "value": 90
       },
       {
@@ -956,7 +956,7 @@
     "overall": 92,
     "skills": [
       {
-        "label": "Kontrol Untung",
+        "label": "Kontrol Hoki",
         "value": 98
       },
       {
@@ -1018,7 +1018,7 @@
         "value": 88
       },
       {
-        "label": "Lemes Duel",
+        "label": "Duel Lemes",
         "value": 84
       }
     ],
@@ -1043,7 +1043,7 @@
         "value": 86
       },
       {
-        "label": "Umpan Modal",
+        "label": "Umpan Dengkul",
         "value": 98
       }
     ],
@@ -1064,11 +1064,11 @@
         "value": 96
       },
       {
-        "label": "Nendang Untung",
+        "label": "Tendangan Hoki",
         "value": 99
       },
       {
-        "label": "Heading Modal",
+        "label": "Heading Dengkul",
         "value": 96
       }
     ],
@@ -1081,7 +1081,7 @@
     "overall": 88,
     "skills": [
       {
-        "label": "Skill Cendol",
+        "label": "Skill Licin",
         "value": 88
       },
       {
@@ -1089,7 +1089,7 @@
         "value": 84
       },
       {
-        "label": "Heading Untung",
+        "label": "Heading Hoki",
         "value": 87
       },
       {
@@ -1139,7 +1139,7 @@
         "value": 88
       },
       {
-        "label": "Kalem Palsu",
+        "label": "Tenang Palsu",
         "value": 98
       },
       {
@@ -1156,7 +1156,7 @@
     "overall": 92,
     "skills": [
       {
-        "label": "Refleks Lemot",
+        "label": "Refleks Telat",
         "value": 97
       },
       {
@@ -1185,7 +1185,7 @@
         "value": 92
       },
       {
-        "label": "Otak Kalem",
+        "label": "Keputusan Kalem",
         "value": 91
       },
       {
@@ -1206,7 +1206,7 @@
     "overall": 88,
     "skills": [
       {
-        "label": "Kalem Duel",
+        "label": "Duel Kalem",
         "value": 92
       },
       {
@@ -1214,7 +1214,7 @@
         "value": 98
       },
       {
-        "label": "Kaki Kalem",
+        "label": "Tendangan Kalem",
         "value": 86
       },
       {
@@ -1264,11 +1264,11 @@
         "value": 91
       },
       {
-        "label": "Nekat Duel",
+        "label": "Duel Berani",
         "value": 96
       },
       {
-        "label": "Salah Umpan",
+        "label": "Umpan Meleset",
         "value": 88
       }
     ],
@@ -1281,7 +1281,7 @@
     "overall": 88,
     "skills": [
       {
-        "label": "Kalem Sprint",
+        "label": "Sprint Santai",
         "value": 86
       },
       {

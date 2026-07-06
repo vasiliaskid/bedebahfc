@@ -1023,3 +1023,120 @@ body {
 .pb {
   padding-bottom: 24px;
 }
+
+/* ======================================================
+   FOOTER
+====================================================== */
+.site-footer {
+  background: var(--navy2);
+  border-top: 3px solid var(--gold);
+  padding: 24px 16px;
+  margin-top: 24px;
+}
+
+.footer-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px;
+  color: var(--goldl);
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid rgba(37, 99, 235, 0.18);
+  padding-bottom: 4px;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  background: var(--navy);
+  padding: 10px 14px;
+  border-left: 3px solid var(--gold);
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+}
+
+.c-role {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--tm);
+  letter-spacing: 1.5px;
+  margin-bottom: 2px;
+}
+
+.c-name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 18px;
+  color: var(--text-main);
+  letter-spacing: 1px;
+  line-height: 1.1;
+}
+
+.c-ig {
+  font-family: 'Barlow', sans-serif;
+  font-size: 13px;
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.c-ig:hover {
+  text-decoration: underline;
+}
+
+.footer-socials {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px dashed rgba(37, 99, 235, 0.2);
+}
+
+.social-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--tm);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.s-link {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 15px;
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  transition: transform 0.15s, opacity 0.15s;
+}
+
+.s-link:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.s-link.ig {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.s-link.tiktok {
+  background: #000;
+}

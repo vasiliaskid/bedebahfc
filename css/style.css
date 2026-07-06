@@ -69,20 +69,11 @@ body {
   text-decoration: none;
 }
 
-.nav-mono {
-  width: 33px;
-  height: 33px;
-  border: 2px solid var(--gold);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.nav-mono span {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 13px;
-  color: var(--gold);
-  letter-spacing: .5px;
+.nav-logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
 }
 
 .nav-name {
@@ -191,12 +182,13 @@ body {
 }
 
 .hero-deco {
-  width: 105px;
+  width: 140px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   flex-shrink: 0;
+  padding: 10px;
 }
 
 .hero-deco::before {
@@ -209,12 +201,17 @@ body {
   background: linear-gradient(to bottom, transparent, var(--gold), transparent);
 }
 
-.hero-deco-num {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 100px;
-  color: rgba(37, 99, 235, 0.07);
-  line-height: 1;
-  user-select: none;
+.hero-logo {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.2));
+  transform: scale(1.15) rotate(-3deg);
+  transition: transform 0.3s ease;
+}
+
+.hero-logo:hover {
+  transform: scale(1.2) rotate(0deg);
 }
 
 /* stat bar */

@@ -39,6 +39,7 @@ async function loadData() {
    INIT
 ============================================================ */
 function init() {
+  initTheme();
   renderStats();
   renderFeaturedMatch();
   renderMatches();
@@ -53,6 +54,35 @@ function init() {
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeModal();
   });
+}
+
+/* ============================================================
+   THEME MANAGER (LIGHT DEFAULT + DARK MODE)
+============================================================ */
+function initTheme() {
+  const savedTheme = localStorage.getItem('bedebah_theme') || 'light';
+  document.documentElement.setAttribute('data-theme', savedTheme);
+  updateThemeUI(savedTheme);
+}
+
+function toggleTheme() {
+  const current = document.documentElement.getAttribute('data-theme') || 'light';
+  const newTheme = current === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', newTheme);
+  localStorage.setItem('bedebah_theme', newTheme);
+  updateThemeUI(newTheme);
+}
+
+function updateThemeUI(theme) {
+  const label = document.getElementById('theme-label');
+  const btn = document.getElementById('theme-toggle');
+  if (label) {
+    label.textContent = theme === 'dark' ? 'LIGHT' : 'DARK';
+  }
+  if (btn) {
+    btn.setAttribute('aria-label', theme === 'dark' ? 'Ganti ke Mode Terang' : 'Ganti ke Mode Gelap');
+    btn.setAttribute('title', theme === 'dark' ? 'Ganti ke Mode Terang' : 'Ganti ke Mode Gelap');
+  }
 }
 
 function handleInitialHash() {

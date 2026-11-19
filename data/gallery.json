@@ -1,68 +1,24 @@
 [
   {
     "id": 1,
-    "title": "BEDEBAH FC vs KIDTRO",
-    "opponent": "KIDTRO",
-    "competition": "Sparring Match",
-    "date": "12 Mei 2026",
-    "venue": "Morley Minisoccer, Sragen",
-    "driveUrl": "https://drive.google.com/drive/folders/bedebah-fc-kidtro-documentation",
+    "title": "ANNIVERSARY BEDEBAH 1 TAHUN",
+    "opponent": "INTERNAL",
+    "competition": "Internal",
+    "date": "6 November 2026",
+    "venue": "Stadion St. Joseph Facilities",
+    "driveUrl": "https://drive.google.com/drive/folders/1EgRcvShfB942JrpqJ5wgXXYRC_W1ZGJH?usp=sharing",
     "thumbnail": "",
-    "description": "Laga persahabatan sengit penuh aksi dan gelak tawa di bawah sorotan lampu Morley Minisoccer."
+    "description": "Laga Anniversary memperingati 1 Tahun Bedebah FC."
   },
   {
     "id": 2,
-    "title": "Internal Trofeo Bedebah — Jilid 1",
-    "opponent": "INTERNAL SQUAD",
-    "competition": "Trofeo Internal",
-    "date": "28 April 2026",
-    "venue": "Lapangan Nglorog, Sragen",
-    "driveUrl": "https://drive.google.com/drive/folders/bedebah-fc-trofeo-internal-1",
-    "thumbnail": "",
-    "description": "Perang saudara penuh drama, tawa, dan adu gengsi antar pemain internal Bedebah FC."
-  },
-  {
-    "id": 3,
-    "title": "BEDEBAH FC vs SILUMAN FC",
-    "opponent": "SILUMAN FC",
-    "competition": "Friendly Match",
-    "date": "15 April 2026",
-    "venue": "Lapangan Polres Sragen",
-    "driveUrl": "https://drive.google.com/drive/folders/bedebah-fc-siluman-fc-docs",
-    "thumbnail": "",
-    "description": "Pertarungan sore hari yang intens dengan cuaca cerah di Lapangan Polres Sragen."
-  },
-  {
-    "id": 4,
-    "title": "BEDEBAH FC vs PN Boyolali",
-    "opponent": "PN Boyolali",
+    "title": "BEDEBAH FC VS FUNDAY SRAGEN",
+    "opponent": "Funday Sragen",
     "competition": "Sparring Match",
-    "date": "02 Maret 2026",
-    "venue": "Morley Minisoccer, Sragen",
-    "driveUrl": "https://drive.google.com/drive/folders/bedebah-fc-pn-boyolali-docs",
+    "date": "13 November 2026",
+    "venue": "Morley Minisoccer, Gondangrejo",
+    "driveUrl": "https://drive.google.com/drive/folders/1JxfClB547j7fWr71qK-1Cg_6mMMVRifK?usp=drive_link",
     "thumbnail": "",
-    "description": "Pertemuan persahabatan sarat hiburan, ditutup dengan sesi foto dan obrolan santai antar pemain."
-  },
-  {
-    "id": 5,
-    "title": "Latihan Bersama & Fun Football Awal Musim",
-    "opponent": "BEDEBAH FAMILY",
-    "competition": "Fun Football",
-    "date": "18 Februari 2026",
-    "venue": "Morley Minisoccer, Sragen",
-    "driveUrl": "https://drive.google.com/drive/folders/bedebah-fc-fun-football-2026",
-    "thumbnail": "",
-    "description": "Pemanasan awal musim untuk menjaga kebugaran fisik dan mempererat kebersamaan seluruh skuad."
-  },
-  {
-    "id": 6,
-    "title": "Trofeo Tahun Baru Bedebah FC",
-    "opponent": "TRIO ALL STARS",
-    "competition": "Trofeo Cup",
-    "date": "10 Januari 2026",
-    "venue": "Stadion Taruna Sragen",
-    "driveUrl": "https://drive.google.com/drive/folders/bedebah-fc-trofeo-tahun-baru",
-    "thumbnail": "",
-    "description": "Turnamen mini pembuka tahun yang meriah dengan kehadiran seluruh pemain dan kawan-kawan supporter."
+    "description": "Laga persahabatan antara Bedebah FC melawan Funday Sragen."
   }
 ]

@@ -1,82 +1,115 @@
-# BEDEBAH FC — Panduan Edit
+# BEDEBAH FC — Official Web Portal & Panduan Kelola Data
 
-## Struktur File
+Website resmi klub sepak bola **BEDEBAH FC** (Sragen). Didesain dengan tema modern, sporty, dan profesional ala klub sepak bola dunia.
+
+---
+
+## 📁 Struktur File & Folder
 ```
-bedebah-fc/
-├── index.html          ← Website utama (jangan diedit kecuali perlu)
+bedebahfc/
+├── index.html          ← Halaman website utama (Navigasi, Hero, Jadwal, Skuad, Galeri)
+├── css/
+│   └── style.css       ← Sistem desain klub, layout responsif, & tema athletic
+├── js/
+│   └── app.js          ← Logika aplikasi, filter & pencarian pemain, render kartu FUT & galeri
 ├── data/
-│   ├── players.json    ← ✏️ EDIT DI SINI untuk tambah/ubah pemain
-│   └── matches.json    ← ✏️ EDIT DI SINI untuk tambah/ubah jadwal
-└── README.md
+│   ├── players.json    ← ✏️ EDIT DI SINI: Data skuad & rating pemain
+│   ├── matches.json    ← ✏️ EDIT DI SINI: Jadwal & agenda pertandingan
+│   └── gallery.json    ← ✏️ EDIT DI SINI: Arsip dokumentasi match & Google Drive
+├── assets/
+│   ├── bedebah_fc.png  ← Logo resmi klub Bedebah FC (1024x1024)
+│   ├── card_bg.png     ← Latar belakang kartu EA Sports FUT
+│   ├── anon.png        ← Siluet pemain default
+│   └── indonesia.png   ← Bendera kebangsaan
+└── README.md           ← Panduan teknis & pembaruan data
 ```
 
 ---
 
-## Cara Tambah Pemain Baru (`data/players.json`)
+## 1. 📸 Cara Menambah Dokumentasi Galeri Baru (`data/gallery.json`)
+Menu **Galeri** mengarsipkan dokumentasi foto/video setiap pertandingan tim melalui tautan Google Drive.
 
-Salin blok ini dan tambahkan di akhir array (sebelum `]`):
+Untuk menambahkan dokumentasi pertandingan baru, tambahkan blok JSON berikut ke dalam array di `data/gallery.json`:
 
 ```json
 {
-  "id": 34,
+  "id": 7,
+  "title": "BEDEBAH FC vs NAMA LAWAN",
+  "opponent": "NAMA LAWAN",
+  "competition": "Sparring Match",
+  "date": "15 Juli 2026",
+  "venue": "Morley Minisoccer, Sragen",
+  "photoCount": "50+ Foto",
+  "driveUrl": "https://drive.google.com/drive/folders/KODE_FOLDER_DRIVE_ANDA",
+  "thumbnail": "",
+  "description": "Catatan singkat keseruan dan momen terbaik laga persahabatan ini."
+}
+```
+
+> **Catatan Foto Thumbnail:**
+> - Jika ada foto cover pertandingan, masukkan URL foto ke `"thumbnail": "https://link-foto.com/cover.jpg"` atau file lokal `"thumbnail": "assets/gallery/cover.jpg"`.
+> - Jika `"thumbnail": ""` dikosongkan, sistem website secara otomatis membuat **Matchday Artwork Cover** eksklusif dengan pola lapangan dan logo Bedebah FC.
+> - `"driveUrl"` akan dibuka otomatis oleh pengunjung di tab baru saat tombol **"Buka Google Drive"** diklik.
+
+---
+
+## 2. ⚽ Cara Menambah / Mengubah Pemain (`data/players.json`)
+
+Tambahkan data pemain baru pada array di `data/players.json`:
+
+```json
+{
+  "id": 55,
   "name": "Nama Pemain",
   "gk": false,
-  "overall": 82,
+  "overall": 88,
   "skills": [
-    { "label": "Skill Lucu 1",  "value": 88 },
-    { "label": "Skill Lucu 2",  "value": 75 },
-    { "label": "Skill Lucu 3",  "value": 92 },
-    { "label": "Skill Lucu 4",  "value": 61 }
+    { "label": "Sprint Nekat", "value": 91 },
+    { "label": "Umpan Santai", "value": 85 },
+    { "label": "Dribble Ngasal", "value": 78 },
+    { "label": "Nongkrong Power", "value": 99 }
   ],
-  "quote": "Quote konyol si pemain."
+  "quote": "Kalah menang sing penting guyub rukun."
 }
 ```
 
-- `"gk": true` → Kiper (dapat tag GK 🔐)
-- `"gk": false` → Player biasa
-- `"overall"` → minimal 80, bebas 80–99
-- `"id"` → urutan angka, jangan sama dengan yang lain
+- `"gk": true` → Penjaga Gawang (Badge GK & Sarung Tangan)
+- `"gk": false` → Pemain Lapangan (Outfield Player)
+- `"overall"` → Rating kartu pemain (80–99)
+- `"skills"` → 4 skill khas si pemain beserta nilainya
+- `"id"` → Nomor ID berurutan unik
 
 ---
 
-## Cara Tambah Jadwal Baru (`data/matches.json`)
+## 3. 🗓️ Cara Menambah Jadwal Pertandingan (`data/matches.json`)
+
+Tambahkan data pertandingan baru pada array di `data/matches.json`:
 
 ```json
 {
-  "id": 4,
-  "date": "2026-07-05",
-  "day": "05",
+  "id": 5,
+  "date": "2026-07-15",
+  "day": "15",
   "month": "Jul",
-  "competition": "Friendmatch",
-  "opponent": "NAMA LAWAN FC",
-  "venue": "Nama Lapangan",
+  "competition": "Sparring",
+  "opponent": "PERSEBAYA SRAGEN",
+  "venue": "Stadion Taruna Sragen",
   "time": "16.00",
-  "type": "upcoming"
+  "type": "upcoming",
+  "htm": "± Rp. 25.000,-"
 }
 ```
 
-- `"type"` → `"upcoming"` (badge kuning) atau `"trofeo"` (badge merah)
-- Untuk pertandingan internal: `"opponent": "INTERNAL"`
+- `"type"`: `"upcoming"` (badge emas) atau `"trofeo"` (badge merah).
+- Pertandingan internal: isi `"opponent": "INTERNAL"`.
 
 ---
 
-## Deploy ke Netlify via GitHub
+## 4. 🚀 Deploy ke Netlify via GitHub
 
-1. Push semua file ke repo GitHub
-2. Buka [app.netlify.com](https://app.netlify.com)
-3. New site → Import from Git → pilih repo
-4. Build command: *(kosongkan)*
-5. Publish directory: `/` atau `.`
-6. Deploy!
-
-Setiap kali edit file di GitHub → Netlify otomatis redeploy.
-
----
-
-## Absensi
-
-Data absensi tersimpan di **localStorage browser masing-masing pemain**.
-Artinya: setiap orang buka website → konfirmasi hadir → tersimpan di browser mereka sendiri.
-
-> Kalau nanti mau data absensi terpusat (semua orang lihat siapa yang hadir),
-> perlu tambahkan Google Sheets atau Netlify Forms — bisa upgrade nanti.
+1. Commit dan push seluruh perubahan ke repositori GitHub.
+2. Buka dashboard [app.netlify.com](https://app.netlify.com).
+3. Pilih repositori Bedebah FC.
+4. **Build command**: *(kosongkan)*
+5. **Publish directory**: `/` atau `.`
+6. Klik **Deploy Site**.

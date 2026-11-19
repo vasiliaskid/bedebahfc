@@ -2,180 +2,326 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BEDEBAH FC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <meta name="theme-color" content="#080e1a" />
+  <meta name="description" content="Website Resmi Bedebah FC — Klub sepak bola asal Sragen. Bermain dengan bahagia, kalah pun happy." />
+  <title>BEDEBAH FC — Official Club Portal</title>
+
+  <!-- Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Barlow:wght@400;500&family=Saira+Semi+Condensed:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;1,400;1,700&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Bebas+Neue&family=Saira+Semi+Condensed:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-<!-- NAV -->
-<nav class="nav">
-  <div class="nav-brand">
-    <img src="assets/bedebah_fc.png" class="nav-logo" alt="BFC" />
-    <span class="nav-name">BEDEBAH</span>
-  </div>
-  <div class="nav-tabs">
-    <button class="nav-tab active" onclick="showPage('home',this)">Home</button>
-    <button class="nav-tab"        onclick="showPage('squad',this)">Squad</button>
-    <button class="nav-tab"        onclick="showPage('absensi',this)">Absensi</button>
-  </div>
-</nav>
-
-<!-- ============================================================
-     HOME
-============================================================ -->
-<div id="home" class="page active">
-  <div class="home-hero">
-    <div class="hero-inner">
-      <div class="hero-left">
-        <div class="hero-eye">Bermain Dengan Bahagia</div>
-        <div class="hero-h1">BEDE<br>BAH</div>
-        <div class="hero-fc">FC</div>
-        <div class="hero-sub">Sragen · Est. Kapan Lupa · Kalah Pun Happy</div>
+<!-- TOP CLUB HEADER -->
+<header class="site-header">
+  <div class="header-inner container">
+    <a href="#home" class="brand" onclick="showPage('home', document.querySelector('[data-page=home]'))">
+      <div class="brand-crest-wrap">
+        <img src="assets/bedebah_fc.png" class="brand-crest" alt="Bedebah FC Badge" />
       </div>
-      <div class="hero-deco">
-        <img src="assets/bedebah_fc.png" class="hero-logo" alt="Bedebah FC Logo" />
+      <div class="brand-text">
+        <span class="brand-title">BEDEBAH <span class="accent-gold">FC</span></span>
+        <span class="brand-sub">SRAGEN · EST. KAPAN LUPA</span>
       </div>
-    </div>
-    <div class="stat-bar">
-      <div class="stat-cell"><div class="stat-n" id="stat-pemain">0</div><div class="stat-l">Pemain</div></div>
-      <div class="stat-cell"><div class="stat-n" id="stat-fixtures">0</div><div class="stat-l">Fixtures</div></div>
-      <div class="stat-cell"><div class="stat-n" id="stat-hadir">0</div><div class="stat-l">Konfirmasi</div></div>
-      <div class="stat-cell"><div class="stat-n">0</div><div class="stat-l">Trofi</div></div>
-    </div>
-  </div>
+    </a>
 
-  <div class="sec pb">
-    <div class="sec-head">
-      <div class="sec-title">Fixtures</div>
-      <div class="sec-line"></div>
-      <div class="sec-num" id="fixtures-count">0 Matches</div>
-    </div>
-    <div id="match-list"></div>
+    <nav class="main-nav" aria-label="Main Navigation">
+      <button class="nav-item active" data-page="home" onclick="showPage('home', this)">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <span>BERANDA</span>
+      </button>
+      <button class="nav-item" data-page="squad" onclick="showPage('squad', this)">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        <span>SKUAD</span>
+      </button>
+      <button class="nav-item" data-page="galeri" onclick="showPage('galeri', this)">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+        <span>GALERI</span>
+      </button>
+    </nav>
   </div>
-</div>
+</header>
 
-<!-- ============================================================
-     SQUAD
-============================================================ -->
-<div id="squad" class="page">
-  <div class="squad-wrap pb">
-    <div class="sec-head">
-      <div class="sec-title">Skuad</div>
-      <div class="sec-line"></div>
-      <div class="sec-num" id="squad-count">0 Players</div>
-    </div>
-    <div class="filter-bar">
-      <input type="text" id="squad-search" class="squad-search-input" placeholder="CARI PEMAIN..." oninput="searchSquad()" />
-      <button class="filter-btn active" onclick="filterSquad('all',this)">Semua</button>
-      <button class="filter-btn" onclick="filterSquad('gk',this)">Kiper</button>
-      <button class="filter-btn" onclick="filterSquad('player',this)">Player</button>
-    </div>
-    <div class="squad-grid" id="squad-grid"></div>
-  </div>
-</div>
-
-<!-- ============================================================
-     ABSENSI
-============================================================ -->
-<div id="absensi" class="page">
-  <div class="abs-wrap pb">
-    <div class="abs-card">
-      <div class="abs-header">
-        <div class="abs-title">KONFIRMASI HADIR</div>
-        <div class="abs-sub">BEDEBAH FC · ABSENSI MATCH</div>
-      </div>
-      <div class="abs-body">
-        <div class="f-group">
-          <label class="f-label">Pertandingan</label>
-          <select class="f-select" id="sel-match">
-            <option value="">— Pilih pertandingan —</option>
-          </select>
-        </div>
-        <div class="f-group">
-          <label class="f-label">Nama Pemain</label>
-          <select class="f-select" id="sel-nama">
-            <option value="">— Pilih nama —</option>
-          </select>
-        </div>
-        <button class="submit-btn" onclick="handleAbsen()">KONFIRMASI HADIR</button>
-        <div class="toast" id="toast">
-          <div class="toast-t" id="toast-t"></div>
-          <div class="toast-s" id="toast-s"></div>
-        </div>
-        <div class="hadir-section">
-          <div class="hadir-head">
-            <div class="hadir-title">Yang Sudah Konfirmasi</div>
-            <div class="hadir-line"></div>
-            <div class="hadir-count" id="hadir-count">0 pemain</div>
+<main>
+  <!-- ============================================================
+       PAGE: HOME (BERANDA)
+  ============================================================ -->
+  <section id="home" class="page active">
+    <!-- HERO SECTION -->
+    <div class="hero-section">
+      <div class="hero-bg-overlay"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-pulse"></span>
+            <span>OFFICIAL CLUB PORTAL · SRAGEN</span>
           </div>
-          <div id="hadir-list"></div>
+          <h1 class="hero-title">
+            BERMAIN DENGAN <span class="highlight-gold">BAHAGIA</span>
+          </h1>
+          <p class="hero-desc">
+            Kalah pun tetap happy! Semangat sportivitas, persaudaraan, dan guyub rukun sepak bola di dalam maupun luar lapangan hijau.
+          </p>
+
+          <div class="hero-actions">
+            <button class="btn btn-primary" onclick="showPage('squad', document.querySelector('[data-page=squad]'))">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              <span>LIHAT SKUAD TIM</span>
+            </button>
+            <button class="btn btn-secondary" onclick="showPage('galeri', document.querySelector('[data-page=galeri]'))">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+              <span>DOKUMENTASI MATCH</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-crest-backdrop">
+            <img src="assets/bedebah_fc.png" class="hero-crest-img" alt="Bedebah FC Official Crest" />
+          </div>
+        </div>
+      </div>
+
+      <!-- CLUB STATS COUNTER -->
+      <div class="stats-ribbon">
+        <div class="container stats-grid">
+          <div class="stat-card">
+            <div class="stat-num" id="stat-pemain">0</div>
+            <div class="stat-label">Pemain Terdaftar</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num" id="stat-fixtures">0</div>
+            <div class="stat-label">Jadwal Pertandingan</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num" id="stat-galeri">0</div>
+            <div class="stat-label">Arsip Galeri Match</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num stat-gold">0</div>
+            <div class="stat-label">Trofi (Tapi Bahagia)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEATURED NEXT MATCH BANNER -->
+    <div class="container section-spacing">
+      <div id="featured-match-wrap" class="featured-match-wrap"></div>
+    </div>
+
+    <!-- FIXTURES SECTION -->
+    <div class="container section-spacing pb-large">
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <span class="section-kicker">AGENDA TIM</span>
+          <h2 class="section-heading">JADWAL & PERTANDINGAN</h2>
+        </div>
+        <div class="section-meta-pill" id="fixtures-count">0 Matches</div>
+      </div>
+
+      <div class="match-list-grid" id="match-list"></div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       PAGE: SQUAD (SKUAD PEMAIN)
+  ============================================================ -->
+  <section id="squad" class="page">
+    <div class="container section-spacing pb-large">
+      <div class="section-header squad-header-bar">
+        <div class="section-title-wrap">
+          <span class="section-kicker">ROSTER PEMAIN</span>
+          <h2 class="section-heading">SKUAD RESMI BEDEBAH FC</h2>
+          <p class="section-desc">Pemain-pemain bertalenta dengan rating unik, skill kocak, dan dedikasi nongkrong tanpa batas.</p>
+        </div>
+        <div class="section-meta-pill" id="squad-count">0 Players</div>
+      </div>
+
+      <!-- SQUAD CONTROLS: SEARCH & FILTER -->
+      <div class="squad-controls-bar">
+        <div class="search-box">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="text" id="squad-search" class="search-input" placeholder="Cari nama pemain..." oninput="searchSquad()" autocomplete="off" />
+          <button id="search-clear-btn" class="search-clear" onclick="clearSquadSearch()" aria-label="Clear Search" style="display:none;">✕</button>
+        </div>
+
+        <div class="filter-pills-wrap">
+          <button class="filter-pill active" onclick="filterSquad('all', this)">SEMUA SQUAD</button>
+          <button class="filter-pill" onclick="filterSquad('gk', this)">PENJAGA GAWANG (GK)</button>
+          <button class="filter-pill" onclick="filterSquad('player', this)">PEMAIN LAPANGAN</button>
+        </div>
+      </div>
+
+      <!-- SQUAD GRID -->
+      <div class="squad-grid" id="squad-grid"></div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       PAGE: GALERI (DOKUMENTASI PERTANDINGAN & GOOGLE DRIVE)
+  ============================================================ -->
+  <section id="galeri" class="page">
+    <div class="container section-spacing pb-large">
+      <div class="section-header gallery-header-bar">
+        <div class="section-title-wrap">
+          <span class="section-kicker">DOKUMENTASI RESMI</span>
+          <h2 class="section-heading">ARSIP & GALERI PERTANDINGAN</h2>
+          <p class="section-desc">Pusat dokumentasi foto dan video laga Bedebah FC. Seluruh arsip tersimpan rapi dan dapat diunduh dalam resolusi penuh melalui tautan Google Drive.</p>
+        </div>
+        <div class="section-meta-pill" id="gallery-count">0 Arsip Match</div>
+      </div>
+
+      <div class="gallery-info-banner">
+        <div class="info-icon-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <div class="info-text">
+          <strong>Akses Dokumentasi Google Drive</strong>
+          <p>Klik tombol <span>"Buka Google Drive"</span> pada masing-masing card pertandingan untuk melihat atau mengunduh dokumentasi resolusi tinggi tim.</p>
+        </div>
+      </div>
+
+      <!-- GALLERY GRID -->
+      <div class="gallery-grid" id="gallery-grid"></div>
+    </div>
+  </section>
+</main>
+
+
+<!-- ============================================================
+     FIFA / FUT CARD MODAL
+============================================================ -->
+<div class="modal-overlay" id="modal" onclick="closeModalOverlay(event)" role="dialog" aria-modal="true" aria-labelledby="fc-name">
+  <div class="fut-modal-card-container">
+    <button class="fc-close" onclick="closeModal()" aria-label="Tutup Kartu Pemain">✕</button>
+
+    <div class="fut-player-card">
+      <div class="player-card-top">
+        <div class="player-master-info">
+          <div class="player-rating"><span id="fc-rating">88</span></div>
+          <div class="player-position"><span id="fc-pos">GK</span></div>
+          <div class="player-nation">
+            <img src="assets/indonesia.png" alt="Bendera Indonesia" draggable="false" />
+          </div>
+          <div class="player-club">
+            <img src="assets/bedebah_fc.png" alt="Logo Bedebah FC" draggable="false" />
+          </div>
+        </div>
+        <div class="player-picture">
+          <div class="player-avatar" id="fc-avatar">
+            <img src="assets/anon.png" alt="Player Silhouette" draggable="false" />
+          </div>
+        </div>
+      </div>
+
+      <div class="player-card-bottom">
+        <div class="player-info">
+          <div class="player-name"><span id="fc-name">NAMA PEMAIN</span></div>
+          <div class="player-features" id="fc-stats"></div>
+          <div class="player-quote" id="fc-quote">"Quote konyol si pemain."</div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
+
 <!-- ============================================================
-     FIFA CARD MODAL (FUT Style)
-============================================================ -->
-<div class="modal-overlay" id="modal" onclick="closeModalOverlay(event)">
-  <div class="fut-player-card">
-    <button class="fc-close" onclick="closeModal()">✕</button>
-    <div class="player-card-top">
-      <div class="player-master-info">
-        <div class="player-rating"><span id="fc-rating">88</span></div>
-        <div class="player-position"><span id="fc-pos">GK</span></div>
-        <div class="player-nation">
-          <img src="assets/indonesia.png" alt="Indonesia" draggable="false" />
-        </div>
-        <div class="player-club">
-          <img src="assets/bedebah_fc.png" alt="Bedebah FC" draggable="false" />
-        </div>
-      </div>
-      <div class="player-picture">
-        <div class="player-avatar" id="fc-avatar">⚽</div>
-      </div>
-    </div>
-    <div class="player-card-bottom">
-      <div class="player-info">
-        <div class="player-name"><span id="fc-name">NAMA</span></div>
-        <div class="player-features" id="fc-stats"></div>
-        <div class="player-quote" id="fc-quote"></div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- ============================================================
-     FOOTER
+     OFFICIAL CLUB FOOTER
 ============================================================ -->
 <footer class="site-footer">
-  <div class="footer-title">Contact Person</div>
-  <div class="footer-contacts">
-    <div class="contact-item">
-      <span class="c-role">Media & Komunikasi</span>
-      <span class="c-name">Toni Bedebah</span>
-      <a href="https://instagram.com/toniperguri" target="_blank" class="c-ig">@toniperguri</a>
+  <div class="container footer-content-grid">
+    <div class="footer-col brand-col">
+      <div class="footer-brand">
+        <img src="assets/bedebah_fc.png" class="footer-logo" alt="Bedebah FC" />
+        <div>
+          <div class="footer-club-name">BEDEBAH <span class="accent-gold">FC</span></div>
+          <div class="footer-motto">BERMAIN DENGAN BAHAGIA</div>
+        </div>
+      </div>
+      <p class="footer-bio">
+        Klub sepak bola amatir berbasis di Sragen, Jawa Tengah. Menjunjung tinggi sportivitas, kebersamaan, dan canda tawa di setiap 90 menit pertandingan.
+      </p>
+      <div class="footer-tags">
+        <span class="footer-tag">Sragen Pride</span>
+        <span class="footer-tag">Est. Kapan Lupa</span>
+        <span class="footer-tag">Kalah Pun Happy</span>
+      </div>
     </div>
-    <div class="contact-item">
-      <span class="c-role">Sparring</span>
-      <span class="c-name">Nasrun Bedebah</span>
-      <a href="https://instagram.com/n4srun" target="_blank" class="c-ig">@n4srun</a>
+
+    <div class="footer-col contacts-col">
+      <h3 class="footer-heading">CONTACT PERSON & PENGURUS</h3>
+      <div class="contact-cards-list">
+        <div class="footer-contact-card">
+          <span class="c-role">Media & Komunikasi</span>
+          <span class="c-name">Toni Bedebah</span>
+          <a href="https://instagram.com/toniperguri" target="_blank" rel="noopener noreferrer" class="c-ig">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="c-icon"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            <span>@toniperguri</span>
+          </a>
+        </div>
+
+        <div class="footer-contact-card">
+          <span class="c-role">Sparring & Pertandingan</span>
+          <span class="c-name">Nasrun Bedebah</span>
+          <a href="https://instagram.com/n4srun" target="_blank" rel="noopener noreferrer" class="c-ig">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="c-icon"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            <span>@n4srun</span>
+          </a>
+        </div>
+
+        <div class="footer-contact-card">
+          <span class="c-role">Sponsorship & Kerjasama</span>
+          <span class="c-name">Ahmad Bedebah</span>
+          <a href="https://instagram.com/djayyyy_05" target="_blank" rel="noopener noreferrer" class="c-ig">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="c-icon"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            <span>@djayyyy_05</span>
+          </a>
+        </div>
+      </div>
     </div>
-    <div class="contact-item">
-      <span class="c-role">Sponsorship & Kerjasama</span>
-      <span class="c-name">Ahmad Bedebah</span>
-      <a href="https://instagram.com/djayyyy_05" target="_blank" class="c-ig">@djayyyy_05</a>
+
+    <div class="footer-col socials-col">
+      <h3 class="footer-heading">OFFICIAL ACCOUNTS</h3>
+      <p class="footer-social-desc">Ikuti update kegiatan, keseruan sparring, dan konten hiburan resmi kami:</p>
+      <div class="footer-social-buttons">
+        <a href="https://instagram.com/fcbedebah" target="_blank" rel="noopener noreferrer" class="social-btn instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="social-svg"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+          <div class="social-btn-text">
+            <span class="soc-sub">Instagram Resmi</span>
+            <span class="soc-main">@fcbedebah</span>
+          </div>
+        </a>
+        <a href="https://tiktok.com/@fcbedebah" target="_blank" rel="noopener noreferrer" class="social-btn tiktok">
+          <svg viewBox="0 0 24 24" fill="currentColor" class="social-svg"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.29 0 .58.04.85.12V9.4a6.33 6.33 0 0 0-.85-.06A6.34 6.34 0 0 0 3.14 15.7a6.34 6.34 0 0 0 8.65 5.92 6.31 6.31 0 0 0 4.03-5.95V8.6a8.27 8.27 0 0 0 4.77 1.5V6.69h-1z"/></svg>
+          <div class="social-btn-text">
+            <span class="soc-sub">TikTok Resmi</span>
+            <span class="soc-main">@fcbedebah</span>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
-  <div class="footer-socials">
-    <div class="social-title">Official Accounts</div>
-    <div class="social-links">
-      <a href="https://instagram.com/fcbedebah" target="_blank" class="s-link ig">IG: @fcbedebah</a>
-      <a href="https://tiktok.com/@fcbedebah" target="_blank" class="s-link tiktok">TikTok: @fcbedebah</a>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <div class="copy-text">
+        © 2026 <strong>BEDEBAH FC</strong>. All Rights Reserved. Bermain Dengan Bahagia.
+      </div>
+      <div class="nav-shortcuts">
+        <a href="#home" onclick="showPage('home', document.querySelector('[data-page=home]'))">Beranda</a>
+        <span class="dot-sep">·</span>
+        <a href="#squad" onclick="showPage('squad', document.querySelector('[data-page=squad]'))">Skuad Tim</a>
+        <span class="dot-sep">·</span>
+        <a href="#galeri" onclick="showPage('galeri', document.querySelector('[data-page=galeri]'))">Galeri Dokumentasi</a>
+      </div>
     </div>
   </div>
 </footer>

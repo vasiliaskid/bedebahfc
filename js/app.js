@@ -104,14 +104,14 @@ function showPage(pageId, btn, updateHash = true) {
     targetPage.classList.add('active');
   }
 
-  // Update nav buttons
-  document.querySelectorAll('.nav-item').forEach(b => b.classList.remove('active'));
-  if (btn) {
-    btn.classList.add('active');
-  } else {
-    const defaultBtn = document.querySelector(`[data-page="${pageId}"]`);
-    if (defaultBtn) defaultBtn.classList.add('active');
-  }
+  // Update nav buttons (both desktop and mobile)
+  document.querySelectorAll('.nav-item, .mobile-nav-item').forEach(b => {
+    if (b.getAttribute('data-page') === pageId) {
+      b.classList.add('active');
+    } else {
+      b.classList.remove('active');
+    }
+  });
 
   if (updateHash && window.location.hash !== `#${pageId}`) {
     history.replaceState(null, null, `#${pageId}`);

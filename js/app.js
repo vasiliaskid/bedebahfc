@@ -383,10 +383,10 @@ function renderGallery() {
     return;
   }
 
-  grid.innerHTML = GALLERY.map(item => {
+  grid.innerHTML = GALLERY.map((item, idx) => {
     const hasThumb = item.thumbnail && item.thumbnail.trim() !== '';
     const defaultDrive = item.driveUrl && item.driveUrl.trim() !== '' ? item.driveUrl : 'https://drive.google.com';
-    const photoCountBadge = item.photoCount ? item.photoCount : 'Dokumentasi Match';
+    const matchNumber = '#' + (idx + 1);
     const competitionTag = item.competition ? item.competition : 'Pertandingan Tim';
 
     // If thumbnail exists, display image; otherwise display an exclusive, high-impact athletic matchday artwork
@@ -404,8 +404,7 @@ function renderGallery() {
           <div class="gallery-floating-badges">
             <span class="badge-competition">${competitionTag}</span>
             <span class="badge-photos">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="badge-icon"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
-              <span>${photoCountBadge}</span>
+              <span>${matchNumber}</span>
             </span>
           </div>
         </div>

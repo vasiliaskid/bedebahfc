@@ -39,15 +39,15 @@ Untuk menambahkan dokumentasi pertandingan baru, tambahkan blok JSON berikut ke 
   "competition": "Sparring Match",
   "date": "15 Juli 2026",
   "venue": "Morley Minisoccer, Sragen",
-  "photoCount": "50+ Foto",
   "driveUrl": "https://drive.google.com/drive/folders/KODE_FOLDER_DRIVE_ANDA",
   "thumbnail": "",
   "description": "Catatan singkat keseruan dan momen terbaik laga persahabatan ini."
 }
 ```
 
-> **Catatan Foto Thumbnail:**
-> - Jika ada foto cover pertandingan, masukkan URL foto ke `"thumbnail": "https://link-foto.com/cover.jpg"` atau file lokal `"thumbnail": "assets/gallery/cover.jpg"`.
+> **Catatan Galeri:**
+> - **Nomor Urut Otomatis**: Nomor kartu (`#1`, `#2`, dst.) muncul otomatis di galeri, sehingga Anda tidak perlu menghitung jumlah foto.
+> - **Foto Thumbnail**: Jika ada foto cover pertandingan, masukkan URL foto ke `"thumbnail": "https://link-foto.com/cover.jpg"` atau file lokal `"thumbnail": "assets/gallery/cover.jpg"`.
 > - Jika `"thumbnail": ""` dikosongkan, sistem website secara otomatis membuat **Matchday Artwork Cover** eksklusif dengan pola lapangan dan logo Bedebah FC.
 > - `"driveUrl"` akan dibuka otomatis oleh pengunjung di tab baru saat tombol **"Buka Google Drive"** diklik.
 
